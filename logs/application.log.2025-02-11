@@ -1,0 +1,45 @@
+2025-02-10 10:30:14,947 - ApplicationLogger - INFO - Aplication started!!
+2025-02-10 10:30:15,267 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-10 10:30:15,267 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-10 10:30:15,504 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-10 10:30:15,505 - ApplicationLogger - INFO - Automations thread finished
+2025-02-10 10:30:23,520 - ApplicationLogger - INFO - Development mode - skipping authentication
+2025-02-10 10:30:23,526 - ApplicationLogger - INFO - Received search request with query: server for type: server
+2025-02-10 10:30:23,528 - ApplicationLogger - INFO - Searching for servers with query: server, dev mode: True
+2025-02-10 10:30:23,529 - ApplicationLogger - INFO - Using mock data for search
+2025-02-10 10:30:23,529 - ApplicationLogger - INFO - Searching mock data with query: server
+2025-02-10 10:30:23,530 - ApplicationLogger - INFO - Found matching server: Web Server Production
+2025-02-10 10:30:23,530 - ApplicationLogger - INFO - Found matching server: Database Server Primary
+2025-02-10 10:30:23,530 - ApplicationLogger - INFO - Found matching server: Application Server Dev
+2025-02-10 10:30:23,531 - ApplicationLogger - INFO - Found matching server: Storage Server
+2025-02-10 10:30:23,532 - ApplicationLogger - INFO - Found matching server: Backup Server
+2025-02-10 10:30:23,532 - ApplicationLogger - INFO - Found 5 matching servers
+2025-02-10 10:30:27,185 - ApplicationLogger - INFO - Development mode - skipping authentication
+2025-02-10 10:30:36,960 - ApplicationLogger - INFO - Development mode - skipping authentication
+2025-02-10 10:30:36,961 - ApplicationLogger - INFO - Received search request with query: server for type: rack
+2025-02-10 10:30:43,081 - ApplicationLogger - INFO - Development mode - skipping authentication
+2025-02-10 10:30:43,081 - ApplicationLogger - INFO - Received search request with query: server for type: server
+2025-02-10 10:30:43,082 - ApplicationLogger - INFO - Searching for servers with query: server, dev mode: True
+2025-02-10 10:30:43,082 - ApplicationLogger - INFO - Using mock data for search
+2025-02-10 10:30:43,083 - ApplicationLogger - INFO - Searching mock data with query: server
+2025-02-10 10:30:43,083 - ApplicationLogger - INFO - Found matching server: Web Server Production
+2025-02-10 10:30:43,084 - ApplicationLogger - INFO - Found matching server: Database Server Primary
+2025-02-10 10:30:43,084 - ApplicationLogger - INFO - Found matching server: Application Server Dev
+2025-02-10 10:30:43,085 - ApplicationLogger - INFO - Found matching server: Storage Server
+2025-02-10 10:30:43,085 - ApplicationLogger - INFO - Found matching server: Backup Server
+2025-02-10 10:30:43,086 - ApplicationLogger - INFO - Found 5 matching servers
+2025-02-10 11:29:52,913 - ApplicationLogger - INFO - Aplication started!!
+2025-02-10 11:29:53,232 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-10 11:29:53,232 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-10 11:29:53,459 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-10 11:29:53,459 - ApplicationLogger - INFO - Automations thread finished
+2025-02-10 11:39:52,761 - ApplicationLogger - INFO - Aplication started!!
+2025-02-10 11:39:53,094 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-10 11:39:53,094 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-10 11:39:53,348 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-10 11:39:53,348 - ApplicationLogger - INFO - Automations thread finished
+2025-02-11 13:05:59,017 - ApplicationLogger - INFO - Aplication started!!
+2025-02-11 13:05:59,452 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-11 13:05:59,453 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-11 13:05:59,873 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-11 13:05:59,874 - ApplicationLogger - INFO - Automations thread finished

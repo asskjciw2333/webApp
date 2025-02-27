@@ -1,0 +1,750 @@
+/* Pull Panel Link Button */
+#red-pull-panel-link {
+    position: fixed;
+    display: inline-block;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    left: var(--spacing-lg);
+    top: 80px;
+    background-color: var(--error-color);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    opacity: 0;
+    box-shadow: var(--shadow-sm);
+}
+
+#red-pull-panel-link #pull-panel-link {
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: var(--spacing-md);
+    color: white;
+}
+
+#red-pull-panel-link:hover {
+    opacity: 1;
+    width: 300px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-lg);
+}
+
+#red-pull-panel-link:hover #pull-panel-link {
+    font-size: 1rem;
+}
+
+/* Filter Form */
+#filter-form {
+    background: white;
+    margin: var(--spacing-lg) auto;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    transition: var(--transition-base);
+}
+
+#filter-form:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+#filter-form div {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+#filter-form select,
+#filter-form input[type="text"] {
+    padding: 0.5rem var(--spacing-md);
+    border: 1px solid #e1e1e1;
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    min-width: 150px;
+}
+
+#filter-form select:focus,
+#filter-form input[type="text"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(44, 120, 115, 0.1);
+}
+
+#filter-form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0 var(--spacing-lg);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    height: 36px;
+    min-width: 80px;
+}
+
+#filter-form button:hover:not(:disabled) {
+    background-color: var(--primary-color-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+#filter-form button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+#filter-form button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Table Styles */
+table {
+    width: 95%;
+    margin: var(--spacing-lg) auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    background: white;
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    padding: var(--spacing-md);
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid #edf2f7;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+tbody tr {
+    transition: all 0.2s ease;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #edf2f7;
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    width: 90%;
+    max-width: 1000px;
+    position: relative;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-close {
+    position: absolute;
+    top: var(--spacing-md);
+    left: var(--spacing-md);
+    font-size: 1.5rem;
+    color: #a0aec0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.modal-close:hover {
+    background: #f7fafc;
+    color: var(--error-color);
+}
+
+.modal.fade-in .modal-content {
+    transform: translateY(0);
+}
+
+/* Form Layout */
+#edit-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+/* Form Fields */
+
+.form-label, label {
+    display: block;
+    text-align: right;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.form-control-text {
+    text-align: left;
+    direction: ltr;
+}
+
+.form-control-text:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(44, 120, 115, 0.1);
+}
+
+/* Radio Interface Section */
+#interfac-radio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: #f8fafc;
+    border-radius: var(--radius-sm);
+    margin: var(--spacing-sm) 0;
+    justify-content: space-between;
+}
+
+.interfac-radio-sub-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xs);
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+}
+
+.interfac-radio-sub-container:hover {
+    background: white;
+}
+
+/* Toggle Switch Improvements */
+.toggle {
+    position: relative;
+    width: calc(var(--sz) * 4);
+    height: calc(var(--sz) * 2);
+    margin: var(--spacing-sm) 0;
+    --sz: 1rem;
+    --on: var(--success-color);
+    --of: #68838d;
+}
+
+.toggle input {
+    display: none;
+}
+
+.toggle label {
+    position: absolute;
+    width: calc(var(--sz) * 4);
+    height: calc(var(--sz) * 2);
+    background: linear-gradient(180deg, #888, #fff);
+    border-radius: var(--sz);
+    padding: calc(var(--sz) / 5);
+    cursor: pointer;
+    box-shadow: 0 0 calc(var(--sz) / 50) calc(var(--sz) / 50) #0002;
+}
+
+.toggle input:checked + label {
+    box-shadow: 0 calc(var(--sz) / 50) calc(var(--sz) / 5) #fff9,
+                0 0 calc(var(--sz) / 50) calc(var(--sz) / 50) #0002;
+}
+
+.toggle label:after {
+    content: "";
+    position: absolute;
+    width: calc(100% - calc(calc(var(--sz) / 5) * 12));
+    height: calc(100% - calc(calc(var(--sz) / 5) * 2));
+    box-shadow: 0 0 calc(var(--sz) / 2) calc(var(--sz) / 10) var(--on),
+                0 0 calc(var(--sz) / 2) calc(var(--sz) / 10) #fff;
+    border-radius: var(--sz);
+    z-index: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.toggle input:checked + label:after {
+    opacity: 1;
+    width: calc(100% - calc(calc(var(--sz) / 5) * 2));
+}
+
+.track {
+    position: absolute;
+    width: calc(calc(var(--sz) * 4) - calc(var(--sz) / 2.5));
+    height: calc(calc(var(--sz) * 2) - calc(var(--sz) / 2.5));
+    border-radius: var(--sz);
+    overflow: hidden;
+}
+
+.track:before {
+    content: "";
+    position: absolute;
+    width: calc(200% - calc(calc(var(--sz) * 2) - calc(var(--sz) / 3)));
+    height: 100%;
+    left: -50%;
+    transition: 0.3s ease;
+    background: linear-gradient(90deg, var(--on) 50%, var(--of) 50%);
+}
+
+.track:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--sz);
+    box-shadow: 0 calc(var(--sz) / -10) calc(var(--sz) / 10) 0 #0005 inset,
+                0 calc(var(--sz) / 10) calc(var(--sz) / 10) 0 #0005 inset;
+}
+
+.toggle input:checked + label .track:before {
+    left: 0%;
+}
+
+.thumb {
+    position: absolute;
+    width: calc(calc(var(--sz) * 2) - calc(var(--sz) / 3));
+    height: calc(calc(var(--sz) * 2) - calc(var(--sz) / 3));
+    top: calc(calc(var(--sz) / 10) + calc(var(--sz) / 15));
+    left: calc(calc(var(--sz) / 10) + calc(var(--sz) / 15));
+    background: linear-gradient(180deg, #fff, #afafaf);
+    border-radius: var(--sz);
+    box-shadow: 0 0 0 calc(var(--sz) / 50) #0002,
+                0 calc(var(--sz) / 10) calc(var(--sz) / 10) 0 #0008;
+    cursor: pointer;
+    font-size: calc(var(--sz) / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: calc(var(--sz) * -0.025);
+    text-shadow: calc(var(--sz) / -8000) calc(var(--sz) / -150) calc(var(--sz) / 50) #0008,
+                 calc(var(--sz) / 150) calc(var(--sz) / 100) calc(var(--sz) / 50) #fff;
+    color: #7d7c7c;
+    z-index: 1;
+}
+
+.toggle input:checked + label .thumb {
+    left: calc(calc(100% - calc(calc(var(--sz) * 2) - calc(var(--sz) / 3))) - calc(calc(var(--sz) / 10) + calc(var(--sz) / 15)));
+    color: var(--on);
+    background: radial-gradient(circle at 7% 50%, #fff calc(var(--sz) / 50), #fff0 calc(var(--sz) / 2)),
+                radial-gradient(circle at 0 50%, var(--on) 10%, #fff0 60%),
+                linear-gradient(180deg, #fff, #afafaf);
+    text-shadow: 0 0 calc(var(--sz) / 10) var(--on),
+                 0 0 calc(var(--sz) / 5) #fff,
+                 calc(var(--sz) / -8000) calc(var(--sz) / -150) calc(var(--sz) / 50) #0008,
+                 calc(var(--sz) / 150) calc(var(--sz) / 100) calc(var(--sz) / 50) #fff;
+}
+
+/* Classification Checkboxes */
+.classification-checkboxes {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin: var(--spacing-md) 0;
+}
+
+.checkbox-container {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.checkbox-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#checkbox-container-red {
+    border: 2px solid var(--error-color);
+    background: transparent;
+}
+
+#checkbox-container-black {
+    border: 2px solid #000;
+    background: transparent;
+}
+
+#checkbox-container-red:has(input[type="checkbox"]:checked) {
+    background: var(--error-color);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(225, 112, 85, 0.3);
+}
+
+#checkbox-container-black:has(input[type="checkbox"]:checked) {
+    background: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Save Button */
+.btn-primary {
+    width: 100%;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.btn-primary:hover {
+    background: var(--primary-color-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Disabled state improvements */
+.form-control-text:disabled {
+    background-color: #f8fafc;
+    cursor: not-allowed;
+    border-color: #e2e8f0;
+}
+
+/* Labels and Notes */
+.lable-note {
+    color: #64748b;
+    font-size: 0.8rem;
+    margin-top: var(--spacing-xs);
+    margin-right: var(--spacing-xs);
+}
+
+/* Textarea Auto-height */
+textarea.form-control-text {
+    min-height: 60px;
+    resize: vertical;
+}
+
+/* Save Button Position Fix */
+#edit-form {
+    position: relative;
+}
+
+.edit-form-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.btn-primary {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/* Download Button Styles - Improved */
+.download-btn {
+    width: 36px;
+    padding: 0;
+}
+
+.download-btn svg {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+
+.download-btn.loading {
+    width: 36px;
+    padding: 0;
+}
+
+.download-btn.loading svg {
+    animation: bounce 1s infinite;
+}
+
+.download-btn.success {
+    background-color: var(--success-color);
+}
+
+/* Loading State */
+.download-btn.loading {
+    background-color: var(--primary-color);
+    width: 34px;
+    padding: 6px;
+}
+
+.download-btn.loading svg {
+    animation: bounce 1s infinite;
+}
+
+/* Success State */
+.download-btn.success {
+    background-color: var(--success-color);
+    width: 34px;
+    padding: 6px;
+}
+
+.download-btn.success svg {
+    transform: scale(0.9);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+/* Common Button Styles */
+.btn-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    height: 36px;
+    padding: 0 var(--spacing-md);
+    border: none;
+    border-radius: var(--radius-sm);
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.btn-base:hover:not(:disabled) {
+    background-color: var(--primary-color-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-base:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.btn-base:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.download-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Download Button */
+.download-btn {
+    width: 36px;
+    padding: 0;
+}
+
+.download-btn svg {
+    margin: 0;
+}
+
+.download-btn.loading {
+    width: 36px;
+    padding: 0;
+}
+
+.download-btn.loading svg {
+    animation: bounce 1s infinite;
+}
+
+.download-btn.success {
+    background-color: var(--success-color);
+    width: 36px;
+    padding: 0;
+}
+
+/* Form Controls Standardization */
+.form-control-text {
+    width: 100%;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    background-color: white;
+}
+
+.form-control-text:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(44, 120, 115, 0.1);
+    outline: none;
+}
+
+/* Filter Form Layout */
+#filter-form {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+#filter-form > div {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+/* Center SVG in buttons */
+button svg {
+    display: block; /* Remove extra space */
+    flex-shrink: 0; /* Prevent SVG from shrinking */
+}
+
+/* Specific button sizes */
+#filter-button {
+    min-width: 80px;
+}
+
+.download-btn {
+    min-width: 36px;
+}
+
+/* Animation keyframes */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+}
+
+.modal:not(.fade-in) {
+    display: none;
+}
+
+.modal.fade-in {
+    display: flex;
+}
+
+/* Add to your existing CSS */
+.fade-in {
+    animation: fadeIn 0.3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

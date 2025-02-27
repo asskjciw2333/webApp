@@ -1,0 +1,711 @@
+#routeSearchModal .form-group {
+    margin-bottom: var(--spacing-md);
+    text-align: right;
+}
+
+#routeSearchModal .form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-color-secondary);
+    font-weight: 500;
+    text-align: right;
+}
+
+#routeSearchModal .form-control-select,
+#routeSearchModal input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color-primary);
+    direction: rtl;
+    text-align: right;
+    transition: all 0.3s ease;
+}
+
+#routeSearchModal .form-control-select:hover,
+#routeSearchModal input[type="number"]:hover {
+    border-color: var(--primary-color);
+}
+
+#routeSearchModal .form-control-select:focus,
+#routeSearchModal input[type="number"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+#preferred-rooms {
+    height: 200px;
+    min-height: 120px;
+    padding: 0;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+#preferred-rooms option {
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+#preferred-rooms option:last-child {
+    border-bottom: none;
+}
+
+#preferred-rooms option:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+#preferred-rooms option:checked {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.form-text {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--text-color-secondary);
+}
+
+input[type="number"] {
+    width: 120px !important;
+    text-align: center !important;
+}
+
+#routes-results {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+    padding: var(--spacing-md) var(--spacing-md) 0 0;
+    margin-right: -1px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    transition: all 0.3s ease-out;
+    max-height: calc(80vh - 100px);
+}
+
+#routes-results.compact {
+    max-height: 50px;
+}
+
+.route {
+    background: var(--background-color-secondary);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.route-header {
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-color);
+    font-size: 0.9em;
+}
+
+.route-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    align-items: center;
+}
+
+.route-step {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+.route-arrow {
+    color: var(--text-color-secondary);
+    font-size: 1em;
+    margin: 0 4px;
+}
+
+.badge {
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.badge-mm {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.badge-sm {
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+.badge-rj {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.no-routes {
+    text-align: center;
+    color: var(--text-color-secondary);
+    padding: var(--spacing-lg);
+    background: var(--background-color-secondary);
+    border-radius: var(--border-radius);
+}
+
+#interfac-radio-container {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: flex-start;
+    margin-top: var(--spacing-xs);
+    direction: rtl;
+}
+
+.interface-radio {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.interface-radio input[type="radio"] {
+    margin: 0;
+}
+
+.interface-radio label {
+    margin: 0 !important;
+    font-weight: normal !important;
+}
+
+#min-ports {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    direction: rtl;
+    text-align: right;
+}
+
+.classification-checkboxes {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin: var(--spacing-md) 0;
+}
+
+.checkbox-container {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.checkbox-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#route-classification-red {
+    border: 2px solid var(--error-color);
+    background: transparent;
+}
+
+#route-classification-black {
+    border: 2px solid #000;
+    background: transparent;
+}
+
+#route-classification-red:has(input[type="checkbox"]:checked) {
+    background: var(--error-color);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(225, 112, 85, 0.3);
+}
+
+#route-classification-black:has(input[type="checkbox"]:checked) {
+    background: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#routeSearchModal .btn-primary {
+    width: 100%;
+    margin-top: var(--spacing-md);
+    justify-content: center;
+}
+
+.form-row {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group-half {
+    flex: 1;
+    min-width: 0;
+}
+
+.form-group-controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.routes-count {
+    margin: var(--spacing-sm) 0;
+    text-align: center;
+}
+
+.count-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.count-success {
+    background-color: var(--success-color-light);
+    color: var(--success-color);
+}
+
+.count-empty {
+    background-color: var(--error-color-light);
+    color: var(--error-color);
+}
+
+
+.form-group-half .classification-checkboxes {
+    margin: 8px 0;
+}
+
+.form-group-half input[type="number"] {
+    height: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-group-controls input[type="number"] {
+    width: 100% !important;
+    max-width: 200px;
+}
+
+.form-group-controls .classification-checkboxes {
+    margin: 8px 0;
+    margin-right: 15px;
+}
+
+.form-group-controls .form-group {
+    margin-bottom: 0;
+}
+
+.form-group-controls {
+    border-left: 1px solid var(--border-color);
+}
+
+#route-search-form {
+    transition: all 0.3s ease-out;
+    max-height: 1000px;
+    opacity: 1;
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+}
+
+#route-search-form.expanded {
+    max-height: 1000px;
+    opacity: 1;
+    margin-bottom: var(--spacing-md);
+}
+
+#route-search-form.collapsed {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.expand-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    background: var(--background-color-secondary);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+    transition: all 0.3s ease;
+}
+
+.expand-button:hover {
+    background: var(--background-color-hover);
+}
+
+.expand-button svg {
+    transition: transform 0.3s ease;
+}
+
+.expand-button.expanded svg {
+    transform: rotate(180deg);
+}
+
+#route-search-form.collapsed + #routes-count {
+    margin-top: 0;
+}
+
+.expand-button + #routes-count {
+    margin-top: var(--spacing-md);
+}
+
+#route-search-form.collapsed ~ #routes-results {
+    max-height: calc(80vh - 100px);
+}
+
+#routeSearchModal .modal-content {
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#routeSearchModal .modal-body {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+}
+
+#routes-results {
+    transition: max-height 0.3s ease-out;
+}
+
+#routes-results::-webkit-scrollbar {
+    width: 8px;
+}
+
+#routes-results::-webkit-scrollbar-track {
+    background: var(--background-color-secondary);
+    border-radius: 4px;
+}
+
+#routes-results::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+#routes-results::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color-secondary);
+}
+
+#route-search-form.collapsed ~ #routes-results {
+    max-height: calc(80vh - 100px);
+}
+
+.results-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--background-color-secondary);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-md);
+}
+
+.results-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    flex: 1;
+}
+
+.search-params {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    font-size: 0.9em;
+    color: var(--text-color-secondary);
+}
+
+.search-param {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: 4px 10px;
+    background: var(--background-color-primary);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    white-space: nowrap;
+}
+
+.toggle-results-btn {
+    background: none;
+    border: none;
+    padding: var(--spacing-xs);
+    cursor: pointer;
+    color: var(--text-color-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.toggle-results-btn:hover {
+    background: var(--background-color-hover);
+    color: var(--primary-color);
+}
+
+.toggle-results-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.toggle-results-btn.expanded svg {
+    transform: rotate(180deg);
+}
+
+#routes-results {
+    max-height: 150px;
+    transition: max-height 0.3s ease-out;
+}
+
+#routes-results.expanded {
+    max-height: calc(80vh - 200px);
+}
+
+.route {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.route:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.route-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.route-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.route-step {
+    background: var(--background-color-secondary);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.route-arrow {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.route, .route-step, .badge {
+    transition: all 0.2s ease;
+}
+
+#routes-results {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) transparent;
+}
+
+#routes-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+#routes-results::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#routes-results::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 3px;
+}
+
+.step-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.step-location, .step-destination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.step-label {
+    font-weight: 600;
+    min-width: 45px;
+    color: #666;
+}
+
+.step-interface {
+    margin-top: 5px;
+}
+
+.interface-type {
+    margin-top: 5px;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.count-badge {
+    margin-top: var(--spacing-xs);
+    display: inline-block;
+}
+
+.toggle-results-btn.hidden {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.beta-tag {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    font-size: 0.6em;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    transform: rotate(20deg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.route-search-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    overflow: visible;
+}
+
+.route {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.route:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.route-select-hint {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85em;
+    color: #2196F3;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(33, 150, 243, 0.1);
+    padding: 5px 12px;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+.route-select-hint::before {
+    content: "👆";
+    font-size: 1em;
+}
+
+.route:hover .route-select-hint {
+    opacity: 1;
+}
+
+.confirmation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+}
+
+.route-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.summary-step {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.summary-arrow {
+    margin: 0 10px;
+    color: #666;
+}
+
+.step-location {
+    font-weight: bold;
+    display: block;
+}
+
+.step-ports {
+    font-size: 0.9em;
+    color: #666;
+}

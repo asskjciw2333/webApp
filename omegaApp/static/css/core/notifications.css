@@ -1,0 +1,118 @@
+#notifications-container {
+    position: fixed;
+    bottom: var(--spacing-lg);
+    left: var(--spacing-lg);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--spacing-sm);
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    color: white;
+    font-weight: 500;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s var(--transition-smooth);
+    direction: rtl;
+    min-width: 300px;
+    max-width: 500px;
+    pointer-events: all;
+    position: relative;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notification.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.notification-close {
+    margin-right: auto;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.notification-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.notification-close svg {
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.notification.success {
+    background-color: var(--success-color, #10B981);
+    border-right: 4px solid var(--success-color-dark, #059669);
+}
+
+.notification.error {
+    background-color: var(--error-color, #EF4444);
+    border-right: 4px solid var(--error-color-dark, #DC2626);
+}
+
+.notification.warning {
+    background-color: var(--warning-color, #F59E0B);
+    border-right: 4px solid var(--warning-color-dark, #D97706);
+}
+
+.notification.info {
+    background-color: var(--info-color, #3B82F6);
+    border-right: 4px solid var(--info-color-dark, #2563EB);
+}
+
+/* הוספת אנימציה חלקה */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* התאמה למסכים קטנים */
+@media (max-width: 768px) {
+    #notifications-container {
+        left: var(--spacing-sm);
+        right: var(--spacing-sm);
+        bottom: var(--spacing-sm);
+    }
+
+    .notification {
+        min-width: auto;
+        width: 100%;
+        max-width: none;
+    }
+} 

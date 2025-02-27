@@ -1,0 +1,118 @@
+.floating-action-buttons {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    z-index: 1000;
+}
+
+.floating-action-buttons.single-button {
+    gap: 0;
+}
+
+.btn-refresh-dcim {
+    background-color: var(--primary-color-light);
+    color: var(--text-on-primary);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.btn-refresh-dcim:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-refresh-dcim svg {
+    width: 16px;
+    height: 16px;
+}
+
+.floating-action-button {
+    background-color: var(--accent-color);
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.floating-action-button:hover {
+    background-color: var(--accent-color-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.floating-action-button.hidden {
+    display: none;
+}
+
+.floating-action-button .selected-count {
+    color: var(--text-on-accent);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.floating-action-button .btn-update {
+    background: none;
+    border: none;
+    color: var(--text-on-accent);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+}
+
+.floating-action-button .btn-update svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Loading state styles */
+.floating-action-buttons button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Animation for buttons */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.floating-action-buttons {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .floating-action-buttons {
+        bottom: 1rem;
+        right: 1rem;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+} 

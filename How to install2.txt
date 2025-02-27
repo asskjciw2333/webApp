@@ -1,0 +1,35 @@
+import os
+import subprocess
+import platform
+
+# פונקציה להרצת פקודה במערכת
+def run_command(command, shell=True):
+    print(f"Running: {command}")
+    result = subprocess.run(command, shell=shell, check=True)
+    return result
+
+# בדיקה אם המערכת היא Windows
+is_windows = platform.system() == "Windows"
+
+# שלב 1: יצירת סביבה וירטואלית
+print("Creating virtual environment...")
+run_command("python -m venv venv")
+
+# שלב 2: הפעלת הסביבה הווירטואלית
+activate_command = "venv\\Scripts\\activate.bat" if is_windows else "source venv/bin/activate"
+print("Activating virtual environment...")
+if is_windows:
+    # ב-Windows, ההפעלה נעשית דרך subprocess
+    subprocess.call(activate_command, shell=True)
+else:
+    run_command(activate_command)
+
+# שלב 3: התקנת התלויות מתוך התיקייה
+print("Installing dependencies from packages folder...")
+run_command("pip install --no-index --find-links=packages -r requirements.txt")
+
+# שלב 4: התקנת האפליקציה
+print("Installing the application...")
+run_command("pip install path_to_application_build")
+
+print("Setup complete!")

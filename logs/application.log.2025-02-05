@@ -1,0 +1,1313 @@
+2025-02-04 00:38:52,739 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 00:38:53,069 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 00:38:53,069 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 00:38:53,322 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 00:38:53,323 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 00:58:53,311 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 00:58:53,626 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 00:58:53,627 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 00:58:53,868 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 00:58:53,869 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 01:28:53,513 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 01:28:53,831 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 01:28:53,832 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 01:28:54,068 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 01:28:54,069 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 01:38:53,327 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 01:38:53,670 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 01:38:53,671 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 01:38:53,916 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 01:38:53,916 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 01:58:52,754 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 01:58:53,074 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 01:58:53,075 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 01:58:53,332 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 01:58:53,333 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 02:28:53,962 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 02:28:54,275 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 02:28:54,276 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 02:28:54,513 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 02:28:54,513 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 02:38:53,774 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 02:38:54,091 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 02:38:54,091 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 02:38:54,321 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 02:38:54,322 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 02:58:53,287 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 02:58:53,623 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 02:58:53,623 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 02:58:53,848 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 02:58:53,849 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 03:28:53,425 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 03:28:53,755 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 03:28:53,756 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 03:28:54,003 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 03:28:54,004 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 03:38:53,275 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 03:38:53,634 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 03:38:53,634 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 03:38:53,876 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 03:38:53,877 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 03:58:53,770 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 03:58:54,082 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 03:58:54,083 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 03:58:54,321 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 03:58:54,322 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 04:28:54,341 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 04:28:54,699 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 04:28:54,700 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 04:28:54,951 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 04:28:54,951 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 04:38:53,278 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 04:38:53,598 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 04:38:53,599 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 04:38:53,834 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 04:38:53,835 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 04:58:53,952 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 04:58:54,268 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 04:58:54,269 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 04:58:54,518 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 04:58:54,518 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 05:28:54,206 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 05:28:54,522 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 05:28:54,523 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 05:28:54,767 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 05:28:54,768 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 05:38:54,116 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 05:38:54,445 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 05:38:54,446 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 05:38:54,691 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 05:38:54,691 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 05:58:53,749 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 05:58:54,090 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 05:58:54,091 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 05:58:54,336 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 05:58:54,337 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 06:28:54,146 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 06:28:54,469 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 06:28:54,469 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 06:28:54,722 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 06:28:54,723 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 06:38:53,966 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 06:38:54,296 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 06:38:54,297 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 06:38:54,549 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 06:38:54,550 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 06:58:53,761 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 06:58:54,093 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 06:58:54,094 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 06:58:54,329 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 06:58:54,329 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 07:28:54,148 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 07:28:54,477 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 07:28:54,478 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 07:28:54,707 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 07:28:54,708 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 07:38:54,041 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 07:38:54,379 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 07:38:54,380 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 07:38:54,616 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 07:38:54,617 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 07:58:53,689 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 07:58:54,014 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 07:58:54,014 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 07:58:54,259 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 07:58:54,259 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 08:18:28,165 - ApplicationLogger - ERROR - Error refreshing DCIM authentication: Invalid URL 'Noneauthentication': No scheme supplied. Perhaps you meant https://Noneauthentication?
+2025-02-04 08:18:28,896 - ApplicationLogger - INFO - File watcher setup successfully
+2025-02-04 08:18:28,897 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R01', 'Rack': '42', 'U': '12'}
+2025-02-04 08:18:28,897 - ApplicationLogger - DEBUG - Processing power data: {'Max': 450, 'Avg': 380, 'Min': 320}
+2025-02-04 08:18:28,897 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 35, 'Avg': 28, 'Min': 22}
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.100
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R02', 'Rack': '43', 'U': '13'}
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Processing power data: {'Max': 455, 'Avg': 385, 'Min': 325}
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 36, 'Avg': 29, 'Min': 23}
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.101
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R03', 'Rack': '44', 'U': '14'}
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Processing power data: {'Max': 460, 'Avg': 390, 'Min': 330}
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 37, 'Avg': 30, 'Min': 24}
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.102
+2025-02-04 08:18:28,898 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R04', 'Rack': '45', 'U': '15'}
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Processing power data: {'Max': 465, 'Avg': 395, 'Min': 335}
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 38, 'Avg': 31, 'Min': 25}
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.103
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R05', 'Rack': '46', 'U': '16'}
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Processing power data: {'Max': 470, 'Avg': 400, 'Min': 340}
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 39, 'Avg': 32, 'Min': 26}
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.104
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R06', 'Rack': '47', 'U': '17'}
+2025-02-04 08:18:28,899 - ApplicationLogger - DEBUG - Processing power data: {'Max': 475, 'Avg': 405, 'Min': 345}
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 33, 'Min': 27}
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.105
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R07', 'Rack': '48', 'U': '18'}
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Processing power data: {'Max': 480, 'Avg': 410, 'Min': 350}
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 34, 'Min': 28}
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.106
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R08', 'Rack': '49', 'U': '19'}
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Processing power data: {'Max': 485, 'Avg': 415, 'Min': 355}
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 35, 'Min': 29}
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:18:28,900 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.107
+2025-02-04 08:18:28,901 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R09', 'Rack': '50', 'U': '20'}
+2025-02-04 08:18:28,901 - ApplicationLogger - DEBUG - Processing power data: {'Max': 490, 'Avg': 420, 'Min': 360}
+2025-02-04 08:18:28,901 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 36, 'Min': 30}
+2025-02-04 08:18:28,901 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:18:28,901 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.108
+2025-02-04 08:18:28,901 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R010', 'Rack': '51', 'U': '21'}
+2025-02-04 08:18:28,901 - ApplicationLogger - DEBUG - Processing power data: {'Max': 495, 'Avg': 425, 'Min': 365}
+2025-02-04 08:18:28,901 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 37, 'Min': 31}
+2025-02-04 08:18:28,901 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:18:28,901 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.109
+2025-02-04 08:18:28,902 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers.json
+2025-02-04 08:18:28,903 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 08:18:28,904 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 08:18:28,904 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 08:18:28,905 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:18:28,905 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.200
+2025-02-04 08:18:28,905 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 08:18:28,905 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 08:18:28,906 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 08:18:28,906 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:18:28,906 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.201
+2025-02-04 08:18:28,906 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 08:18:28,906 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 08:18:28,906 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 08:18:28,906 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:18:28,906 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.202
+2025-02-04 08:18:28,906 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 08:18:28,907 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 08:18:28,907 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 08:18:28,908 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:18:28,908 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.203
+2025-02-04 08:18:28,908 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 08:18:28,909 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 08:18:28,909 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 08:18:28,909 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:18:28,909 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.204
+2025-02-04 08:18:28,909 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 08:18:28,909 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 08:18:28,909 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 08:18:28,909 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:18:28,909 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.205
+2025-02-04 08:18:28,910 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 08:18:28,910 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 08:18:28,910 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 08:18:28,910 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:18:28,910 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.206
+2025-02-04 08:18:28,911 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 08:18:28,911 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 08:18:28,911 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 08:18:28,911 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:18:28,911 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.207
+2025-02-04 08:18:28,911 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 08:18:28,911 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 08:18:28,912 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 08:18:28,912 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:18:28,912 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.208
+2025-02-04 08:18:28,912 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 08:18:28,912 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 08:18:28,912 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 08:18:28,912 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:18:28,912 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.209
+2025-02-04 08:18:28,913 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_2.json
+2025-02-04 08:18:28,913 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 08:18:28,913 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 08:18:28,913 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.300
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.301
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.302
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 08:18:28,914 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.303
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.304
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:18:28,915 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.305
+2025-02-04 08:18:28,916 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 08:18:28,916 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 08:18:28,916 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 08:18:28,919 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:18:28,920 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.306
+2025-02-04 08:18:28,920 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 08:18:28,920 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 08:18:28,921 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 08:18:28,921 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:18:28,921 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.307
+2025-02-04 08:18:28,921 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 08:18:28,921 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 08:18:28,921 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 08:18:28,921 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:18:28,921 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.308
+2025-02-04 08:18:28,922 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 08:18:28,922 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 08:18:28,922 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 08:18:28,922 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:18:28,922 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.309
+2025-02-04 08:18:28,922 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_3.json
+2025-02-04 08:18:28,922 - ApplicationLogger - INFO - ServerDataManager initialized successfully
+2025-02-04 08:28:54,253 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 08:28:54,573 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 08:28:54,574 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 08:28:54,803 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 08:28:54,804 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 08:33:29,053 - ApplicationLogger - INFO - File watcher setup successfully
+2025-02-04 08:33:29,055 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R01', 'Rack': '42', 'U': '12'}
+2025-02-04 08:33:29,055 - ApplicationLogger - DEBUG - Processing power data: {'Max': 450, 'Avg': 380, 'Min': 320}
+2025-02-04 08:33:29,055 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 35, 'Avg': 28, 'Min': 22}
+2025-02-04 08:33:29,055 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:33:29,055 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.100
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R02', 'Rack': '43', 'U': '13'}
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing power data: {'Max': 455, 'Avg': 385, 'Min': 325}
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 36, 'Avg': 29, 'Min': 23}
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.101
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R03', 'Rack': '44', 'U': '14'}
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing power data: {'Max': 460, 'Avg': 390, 'Min': 330}
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 37, 'Avg': 30, 'Min': 24}
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.102
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R04', 'Rack': '45', 'U': '15'}
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing power data: {'Max': 465, 'Avg': 395, 'Min': 335}
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 38, 'Avg': 31, 'Min': 25}
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.103
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R05', 'Rack': '46', 'U': '16'}
+2025-02-04 08:33:29,056 - ApplicationLogger - DEBUG - Processing power data: {'Max': 470, 'Avg': 400, 'Min': 340}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 39, 'Avg': 32, 'Min': 26}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.104
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R06', 'Rack': '47', 'U': '17'}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing power data: {'Max': 475, 'Avg': 405, 'Min': 345}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 33, 'Min': 27}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.105
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R07', 'Rack': '48', 'U': '18'}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing power data: {'Max': 480, 'Avg': 410, 'Min': 350}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 34, 'Min': 28}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.106
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R08', 'Rack': '49', 'U': '19'}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing power data: {'Max': 485, 'Avg': 415, 'Min': 355}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 35, 'Min': 29}
+2025-02-04 08:33:29,057 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.107
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R09', 'Rack': '50', 'U': '20'}
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Processing power data: {'Max': 490, 'Avg': 420, 'Min': 360}
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 36, 'Min': 30}
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.108
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R010', 'Rack': '51', 'U': '21'}
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Processing power data: {'Max': 495, 'Avg': 425, 'Min': 365}
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 37, 'Min': 31}
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.109
+2025-02-04 08:33:29,058 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers.json
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.200
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.201
+2025-02-04 08:33:29,059 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.202
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.203
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:33:29,060 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.204
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.205
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.206
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.207
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 08:33:29,061 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.208
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.209
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_2.json
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.300
+2025-02-04 08:33:29,062 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.301
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.302
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.303
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.304
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 08:33:29,063 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.305
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.306
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.307
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 08:33:29,064 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:33:29,065 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.308
+2025-02-04 08:33:29,065 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 08:33:29,065 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 08:33:29,065 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 08:33:29,065 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:33:29,065 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.309
+2025-02-04 08:33:29,065 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_3.json
+2025-02-04 08:33:29,066 - ApplicationLogger - INFO - ServerDataManager initialized successfully
+2025-02-04 08:38:54,179 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 08:38:54,510 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 08:38:54,510 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 08:38:54,743 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 08:38:54,744 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 08:44:02,298 - ApplicationLogger - INFO - File watcher setup successfully
+2025-02-04 08:44:02,299 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R01', 'Rack': '42', 'U': '12'}
+2025-02-04 08:44:02,299 - ApplicationLogger - DEBUG - Processing power data: {'Max': 450, 'Avg': 380, 'Min': 320}
+2025-02-04 08:44:02,299 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 35, 'Avg': 28, 'Min': 22}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.100
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R02', 'Rack': '43', 'U': '13'}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing power data: {'Max': 455, 'Avg': 385, 'Min': 325}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 36, 'Avg': 29, 'Min': 23}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.101
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R03', 'Rack': '44', 'U': '14'}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing power data: {'Max': 460, 'Avg': 390, 'Min': 330}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 37, 'Avg': 30, 'Min': 24}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.102
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R04', 'Rack': '45', 'U': '15'}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing power data: {'Max': 465, 'Avg': 395, 'Min': 335}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 38, 'Avg': 31, 'Min': 25}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.103
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R05', 'Rack': '46', 'U': '16'}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing power data: {'Max': 470, 'Avg': 400, 'Min': 340}
+2025-02-04 08:44:02,300 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 39, 'Avg': 32, 'Min': 26}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.104
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R06', 'Rack': '47', 'U': '17'}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing power data: {'Max': 475, 'Avg': 405, 'Min': 345}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 33, 'Min': 27}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.105
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R07', 'Rack': '48', 'U': '18'}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing power data: {'Max': 480, 'Avg': 410, 'Min': 350}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 34, 'Min': 28}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.106
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R08', 'Rack': '49', 'U': '19'}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing power data: {'Max': 485, 'Avg': 415, 'Min': 355}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 35, 'Min': 29}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.107
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R09', 'Rack': '50', 'U': '20'}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing power data: {'Max': 490, 'Avg': 420, 'Min': 360}
+2025-02-04 08:44:02,301 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 36, 'Min': 30}
+2025-02-04 08:44:02,302 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:44:02,302 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.108
+2025-02-04 08:44:02,302 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R010', 'Rack': '51', 'U': '21'}
+2025-02-04 08:44:02,302 - ApplicationLogger - DEBUG - Processing power data: {'Max': 495, 'Avg': 425, 'Min': 365}
+2025-02-04 08:44:02,302 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 37, 'Min': 31}
+2025-02-04 08:44:02,302 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:44:02,302 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.109
+2025-02-04 08:44:02,302 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers.json
+2025-02-04 08:44:02,303 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 08:44:02,303 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 08:44:02,303 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 08:44:02,303 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:44:02,303 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.200
+2025-02-04 08:44:02,303 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 08:44:02,303 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 08:44:02,303 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 08:44:02,303 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:44:02,303 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.201
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.202
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.203
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.204
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 08:44:02,304 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.205
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.206
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.207
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:44:02,305 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.208
+2025-02-04 08:44:02,306 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 08:44:02,306 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 08:44:02,306 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 08:44:02,306 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:44:02,306 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.209
+2025-02-04 08:44:02,306 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_2.json
+2025-02-04 08:44:02,306 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 08:44:02,306 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.300
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.301
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 08:44:02,307 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.302
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.303
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.304
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.305
+2025-02-04 08:44:02,308 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.306
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.307
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.308
+2025-02-04 08:44:02,309 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 08:44:02,313 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 08:44:02,313 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 08:44:02,313 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:44:02,313 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.309
+2025-02-04 08:44:02,313 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_3.json
+2025-02-04 08:44:02,313 - ApplicationLogger - INFO - ServerDataManager initialized successfully
+2025-02-04 08:58:53,807 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 08:58:54,136 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 08:58:54,136 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 08:58:54,377 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 08:58:54,377 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 08:59:02,301 - ApplicationLogger - INFO - File watcher setup successfully
+2025-02-04 08:59:02,303 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R01', 'Rack': '42', 'U': '12'}
+2025-02-04 08:59:02,303 - ApplicationLogger - DEBUG - Processing power data: {'Max': 450, 'Avg': 380, 'Min': 320}
+2025-02-04 08:59:02,303 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 35, 'Avg': 28, 'Min': 22}
+2025-02-04 08:59:02,303 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:59:02,303 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.100
+2025-02-04 08:59:02,303 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R02', 'Rack': '43', 'U': '13'}
+2025-02-04 08:59:02,303 - ApplicationLogger - DEBUG - Processing power data: {'Max': 455, 'Avg': 385, 'Min': 325}
+2025-02-04 08:59:02,303 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 36, 'Avg': 29, 'Min': 23}
+2025-02-04 08:59:02,303 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.101
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R03', 'Rack': '44', 'U': '14'}
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing power data: {'Max': 460, 'Avg': 390, 'Min': 330}
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 37, 'Avg': 30, 'Min': 24}
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.102
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R04', 'Rack': '45', 'U': '15'}
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing power data: {'Max': 465, 'Avg': 395, 'Min': 335}
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 38, 'Avg': 31, 'Min': 25}
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.103
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R05', 'Rack': '46', 'U': '16'}
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing power data: {'Max': 470, 'Avg': 400, 'Min': 340}
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 39, 'Avg': 32, 'Min': 26}
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.104
+2025-02-04 08:59:02,304 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R06', 'Rack': '47', 'U': '17'}
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Processing power data: {'Max': 475, 'Avg': 405, 'Min': 345}
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 33, 'Min': 27}
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.105
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R07', 'Rack': '48', 'U': '18'}
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Processing power data: {'Max': 480, 'Avg': 410, 'Min': 350}
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 34, 'Min': 28}
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.106
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R08', 'Rack': '49', 'U': '19'}
+2025-02-04 08:59:02,305 - ApplicationLogger - DEBUG - Processing power data: {'Max': 485, 'Avg': 415, 'Min': 355}
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 35, 'Min': 29}
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.107
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R09', 'Rack': '50', 'U': '20'}
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Processing power data: {'Max': 490, 'Avg': 420, 'Min': 360}
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 36, 'Min': 30}
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.108
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R010', 'Rack': '51', 'U': '21'}
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Processing power data: {'Max': 495, 'Avg': 425, 'Min': 365}
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 37, 'Min': 31}
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.109
+2025-02-04 08:59:02,306 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers.json
+2025-02-04 08:59:02,307 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 08:59:02,308 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 08:59:02,308 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 08:59:02,308 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:59:02,308 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.200
+2025-02-04 08:59:02,308 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 08:59:02,308 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 08:59:02,308 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 08:59:02,308 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:59:02,308 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.201
+2025-02-04 08:59:02,308 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 08:59:02,309 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 08:59:02,309 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 08:59:02,309 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:59:02,309 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.202
+2025-02-04 08:59:02,309 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 08:59:02,309 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 08:59:02,309 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 08:59:02,309 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:59:02,309 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.203
+2025-02-04 08:59:02,310 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 08:59:02,310 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 08:59:02,310 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 08:59:02,310 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:59:02,310 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.204
+2025-02-04 08:59:02,310 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 08:59:02,310 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 08:59:02,310 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 08:59:02,310 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:59:02,310 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.205
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.206
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.207
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 08:59:02,311 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 08:59:02,312 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 08:59:02,312 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:59:02,312 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.208
+2025-02-04 08:59:02,312 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 08:59:02,312 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 08:59:02,312 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 08:59:02,312 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 08:59:02,312 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.209
+2025-02-04 08:59:02,312 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_2.json
+2025-02-04 08:59:02,313 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 08:59:02,313 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 08:59:02,313 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.300
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.301
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.302
+2025-02-04 08:59:02,314 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.303
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.304
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.305
+2025-02-04 08:59:02,315 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.306
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.307
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:59:02,316 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.308
+2025-02-04 08:59:02,317 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 08:59:02,317 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 08:59:02,317 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 08:59:02,317 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 08:59:02,317 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.309
+2025-02-04 08:59:02,317 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_3.json
+2025-02-04 08:59:02,317 - ApplicationLogger - INFO - ServerDataManager initialized successfully
+2025-02-04 09:28:54,064 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 09:28:54,402 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 09:28:54,403 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 09:28:54,642 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 09:28:54,643 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 09:29:02,321 - ApplicationLogger - INFO - File watcher setup successfully
+2025-02-04 09:29:02,323 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R01', 'Rack': '42', 'U': '12'}
+2025-02-04 09:29:02,323 - ApplicationLogger - DEBUG - Processing power data: {'Max': 450, 'Avg': 380, 'Min': 320}
+2025-02-04 09:29:02,323 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 35, 'Avg': 28, 'Min': 22}
+2025-02-04 09:29:02,323 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.100
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R02', 'Rack': '43', 'U': '13'}
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Processing power data: {'Max': 455, 'Avg': 385, 'Min': 325}
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 36, 'Avg': 29, 'Min': 23}
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.101
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R03', 'Rack': '44', 'U': '14'}
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Processing power data: {'Max': 460, 'Avg': 390, 'Min': 330}
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 37, 'Avg': 30, 'Min': 24}
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.102
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R04', 'Rack': '45', 'U': '15'}
+2025-02-04 09:29:02,324 - ApplicationLogger - DEBUG - Processing power data: {'Max': 465, 'Avg': 395, 'Min': 335}
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 38, 'Avg': 31, 'Min': 25}
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.103
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R05', 'Rack': '46', 'U': '16'}
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Processing power data: {'Max': 470, 'Avg': 400, 'Min': 340}
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 39, 'Avg': 32, 'Min': 26}
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.104
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R06', 'Rack': '47', 'U': '17'}
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Processing power data: {'Max': 475, 'Avg': 405, 'Min': 345}
+2025-02-04 09:29:02,325 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 33, 'Min': 27}
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.105
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R07', 'Rack': '48', 'U': '18'}
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Processing power data: {'Max': 480, 'Avg': 410, 'Min': 350}
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 34, 'Min': 28}
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.106
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R08', 'Rack': '49', 'U': '19'}
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Processing power data: {'Max': 485, 'Avg': 415, 'Min': 355}
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 35, 'Min': 29}
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:29:02,326 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.107
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R09', 'Rack': '50', 'U': '20'}
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Processing power data: {'Max': 490, 'Avg': 420, 'Min': 360}
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 36, 'Min': 30}
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.108
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R010', 'Rack': '51', 'U': '21'}
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Processing power data: {'Max': 495, 'Avg': 425, 'Min': 365}
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 37, 'Min': 31}
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.109
+2025-02-04 09:29:02,327 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers.json
+2025-02-04 09:29:02,328 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 09:29:02,328 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 09:29:02,328 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 09:29:02,328 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:29:02,328 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.200
+2025-02-04 09:29:02,328 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 09:29:02,328 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 09:29:02,329 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 09:29:02,329 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:29:02,329 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.201
+2025-02-04 09:29:02,329 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 09:29:02,329 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 09:29:02,329 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 09:29:02,329 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:29:02,329 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.202
+2025-02-04 09:29:02,329 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.203
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.204
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.205
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 09:29:02,330 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.206
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.207
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.208
+2025-02-04 09:29:02,331 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 09:29:02,332 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 09:29:02,332 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 09:29:02,332 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:29:02,332 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.209
+2025-02-04 09:29:02,332 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_2.json
+2025-02-04 09:29:02,332 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 09:29:02,332 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 09:29:02,332 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.300
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.301
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.302
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 09:29:02,333 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.303
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.304
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.305
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:29:02,334 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.306
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.307
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.308
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.309
+2025-02-04 09:29:02,335 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_3.json
+2025-02-04 09:29:02,335 - ApplicationLogger - INFO - ServerDataManager initialized successfully
+2025-02-04 09:38:53,871 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 09:38:54,191 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 09:38:54,192 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 09:38:54,454 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 09:38:54,455 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 09:39:02,324 - ApplicationLogger - INFO - File watcher setup successfully
+2025-02-04 09:39:02,325 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R01', 'Rack': '42', 'U': '12'}
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing power data: {'Max': 450, 'Avg': 380, 'Min': 320}
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 35, 'Avg': 28, 'Min': 22}
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.100
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R02', 'Rack': '43', 'U': '13'}
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing power data: {'Max': 455, 'Avg': 385, 'Min': 325}
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 36, 'Avg': 29, 'Min': 23}
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.101
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R03', 'Rack': '44', 'U': '14'}
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing power data: {'Max': 460, 'Avg': 390, 'Min': 330}
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 37, 'Avg': 30, 'Min': 24}
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:39:02,326 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.102
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R04', 'Rack': '45', 'U': '15'}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing power data: {'Max': 465, 'Avg': 395, 'Min': 335}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 38, 'Avg': 31, 'Min': 25}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.103
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R05', 'Rack': '46', 'U': '16'}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing power data: {'Max': 470, 'Avg': 400, 'Min': 340}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 39, 'Avg': 32, 'Min': 26}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.104
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R06', 'Rack': '47', 'U': '17'}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing power data: {'Max': 475, 'Avg': 405, 'Min': 345}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 33, 'Min': 27}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.105
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R07', 'Rack': '48', 'U': '18'}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing power data: {'Max': 480, 'Avg': 410, 'Min': 350}
+2025-02-04 09:39:02,327 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 34, 'Min': 28}
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.106
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R08', 'Rack': '49', 'U': '19'}
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing power data: {'Max': 485, 'Avg': 415, 'Min': 355}
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 35, 'Min': 29}
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.107
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R09', 'Rack': '50', 'U': '20'}
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing power data: {'Max': 490, 'Avg': 420, 'Min': 360}
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 36, 'Min': 30}
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.108
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-TLV-1', 'Room': 'Server Room A', 'Row': 'R010', 'Rack': '51', 'U': '21'}
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing power data: {'Max': 495, 'Avg': 425, 'Min': 365}
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 37, 'Min': 31}
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 1Gb 4-port 331i Adapter', 'class': 'Network Controller', 'Vendor': 'HP'}, {'Name': 'Smart Array P408i-a SR Gen10', 'class': 'Storage Controller', 'Vendor': 'HP'}]
+2025-02-04 09:39:02,328 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.0.109
+2025-02-04 09:39:02,329 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers.json
+2025-02-04 09:39:02,329 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 09:39:02,329 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 09:39:02,329 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.200
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.201
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.202
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 09:39:02,330 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.203
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.204
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.205
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 09:39:02,331 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.206
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.207
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.208
+2025-02-04 09:39:02,332 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-2-TLV', 'Room': 'Lab Room C', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 09:39:02,333 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 09:39:02,333 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 09:39:02,333 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Dell'}]
+2025-02-04 09:39:02,333 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.2.209
+2025-02-04 09:39:02,333 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_2.json
+2025-02-04 09:39:02,333 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R10', 'Rack': '10', 'U': '5'}
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Processing power data: {'Max': 600, 'Avg': 500, 'Min': 400}
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 40, 'Avg': 30, 'Min': 25}
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.300
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R11', 'Rack': '12', 'U': '6'}
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Processing power data: {'Max': 610, 'Avg': 510, 'Min': 410}
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 41, 'Avg': 31, 'Min': 26}
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.301
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R12', 'Rack': '14', 'U': '7'}
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Processing power data: {'Max': 620, 'Avg': 520, 'Min': 420}
+2025-02-04 09:39:02,334 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 42, 'Avg': 32, 'Min': 27}
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.302
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R13', 'Rack': '16', 'U': '8'}
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Processing power data: {'Max': 630, 'Avg': 530, 'Min': 430}
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 43, 'Avg': 33, 'Min': 28}
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.303
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R14', 'Rack': '18', 'U': '9'}
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Processing power data: {'Max': 640, 'Avg': 540, 'Min': 440}
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 44, 'Avg': 34, 'Min': 29}
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.304
+2025-02-04 09:39:02,335 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R15', 'Rack': '20', 'U': '10'}
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing power data: {'Max': 650, 'Avg': 550, 'Min': 450}
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 45, 'Avg': 35, 'Min': 30}
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.305
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R16', 'Rack': '22', 'U': '11'}
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing power data: {'Max': 660, 'Avg': 560, 'Min': 460}
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 46, 'Avg': 36, 'Min': 31}
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.306
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R17', 'Rack': '24', 'U': '12'}
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing power data: {'Max': 670, 'Avg': 570, 'Min': 470}
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 47, 'Avg': 37, 'Min': 32}
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.307
+2025-02-04 09:39:02,336 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R18', 'Rack': '26', 'U': '13'}
+2025-02-04 09:39:02,337 - ApplicationLogger - DEBUG - Processing power data: {'Max': 680, 'Avg': 580, 'Min': 480}
+2025-02-04 09:39:02,337 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 48, 'Avg': 38, 'Min': 33}
+2025-02-04 09:39:02,337 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:39:02,337 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.308
+2025-02-04 09:39:02,337 - ApplicationLogger - DEBUG - Processing location data: {'DataCenter': 'DC-3-TLV', 'Room': 'Lab Room D', 'Row': 'R19', 'Rack': '28', 'U': '14'}
+2025-02-04 09:39:02,337 - ApplicationLogger - DEBUG - Processing power data: {'Max': 690, 'Avg': 590, 'Min': 490}
+2025-02-04 09:39:02,337 - ApplicationLogger - DEBUG - Processing temperature data: {'Max': 49, 'Avg': 39, 'Min': 34}
+2025-02-04 09:39:02,337 - ApplicationLogger - DEBUG - Processing internal devices data: [{'Name': 'Ethernet 10Gb X710 Adapter', 'class': 'Network Controller', 'Vendor': 'Intel'}, {'Name': 'Controller X', 'class': 'Storage Controller', 'Vendor': 'Cisco'}]
+2025-02-04 09:39:02,337 - ApplicationLogger - DEBUG - Loaded and normalized data for server 10.0.3.309
+2025-02-04 09:39:02,337 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_3.json
+2025-02-04 09:39:02,337 - ApplicationLogger - INFO - ServerDataManager initialized successfully
+2025-02-04 09:55:27,589 - ApplicationLogger - INFO - Development mode - skipping authentication
+2025-02-04 09:55:27,590 - ApplicationLogger - INFO - Received search request with query: server
+2025-02-04 09:55:27,590 - ApplicationLogger - INFO - Searching for servers with query: server, dev mode: True
+2025-02-04 09:55:27,591 - ApplicationLogger - INFO - Using mock data for search
+2025-02-04 09:55:27,591 - ApplicationLogger - INFO - Searching mock data with query: server
+2025-02-04 09:55:27,591 - ApplicationLogger - INFO - Found matching server: Web Server Production
+2025-02-04 09:55:27,592 - ApplicationLogger - INFO - Found matching server: Database Server Primary
+2025-02-04 09:55:27,592 - ApplicationLogger - INFO - Found matching server: Application Server Dev
+2025-02-04 09:55:27,592 - ApplicationLogger - INFO - Found matching server: Storage Server
+2025-02-04 09:55:27,593 - ApplicationLogger - INFO - Found matching server: Backup Server
+2025-02-04 09:55:27,593 - ApplicationLogger - INFO - Found 5 matching servers
+2025-02-04 09:55:27,594 - ApplicationLogger - INFO - Rendering results with 5 servers found
+2025-02-04 09:58:17,688 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 09:58:18,046 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 09:58:18,047 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 09:58:18,324 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 09:58:18,325 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 09:58:22,025 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 09:58:22,353 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 09:58:22,353 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 09:58:22,599 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 09:58:22,600 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 09:58:54,473 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 09:58:54,812 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 09:58:54,813 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 09:58:55,079 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 09:58:55,080 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 10:28:54,953 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 10:28:55,266 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 10:28:55,266 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 10:28:55,485 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 10:28:55,486 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 10:38:54,751 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 10:38:55,060 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 10:38:55,060 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 10:38:55,289 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 10:38:55,290 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 10:58:54,258 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 10:58:54,580 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 10:58:54,581 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 10:58:54,798 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 10:58:54,799 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 11:28:54,652 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 11:28:54,966 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 11:28:54,966 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 11:28:55,187 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 11:28:55,188 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 11:38:54,814 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 11:38:55,129 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 11:38:55,129 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 11:38:55,342 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 11:38:55,342 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 11:58:54,726 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 11:58:55,045 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 11:58:55,045 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 11:58:55,274 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 11:58:55,275 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 12:28:55,040 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 12:28:55,355 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 12:28:55,356 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 12:28:55,579 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 12:28:55,580 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 12:38:55,087 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 12:38:55,433 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 12:38:55,433 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 12:38:55,703 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 12:38:55,703 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 12:58:55,029 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 12:58:55,343 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 12:58:55,344 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 12:58:55,581 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 12:58:55,582 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 13:28:55,372 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 13:28:55,821 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 13:28:55,822 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 13:28:56,044 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 13:28:56,044 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 13:38:55,334 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 13:38:55,648 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 13:38:55,648 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 13:38:55,874 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 13:38:55,875 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 13:58:54,888 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 13:58:55,207 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 13:58:55,208 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 13:58:55,417 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 13:58:55,418 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 14:28:55,267 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 14:28:55,582 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 14:28:55,582 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 14:28:55,812 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 14:28:55,813 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 14:38:55,054 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 14:38:55,401 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 14:38:55,401 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 14:38:55,644 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 14:38:55,645 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 14:58:54,598 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 14:58:54,919 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 14:58:54,920 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 14:58:55,186 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 14:58:55,187 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 15:28:54,936 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 15:28:55,262 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 15:28:55,263 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 15:28:55,494 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 15:28:55,495 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 15:38:54,724 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 15:38:55,042 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 15:38:55,043 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 15:38:55,292 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 15:38:55,293 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 15:58:55,379 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 15:58:55,688 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 15:58:55,689 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 15:58:55,904 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 15:58:55,905 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 16:28:55,605 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 16:28:55,918 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 16:28:55,919 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 16:28:56,145 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 16:28:56,146 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 16:38:55,463 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 16:38:55,781 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 16:38:55,781 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 16:38:55,990 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 16:38:55,991 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 16:58:55,008 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 16:58:55,335 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 16:58:55,335 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 16:58:55,566 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 16:58:55,567 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 17:28:55,643 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 17:28:56,002 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 17:28:56,003 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 17:28:56,246 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 17:28:56,246 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 17:38:55,490 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 17:38:55,823 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 17:38:55,823 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 17:38:56,040 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 17:38:56,040 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 17:58:54,956 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 17:58:55,271 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 17:58:55,272 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 17:58:55,512 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 17:58:55,513 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 18:28:56,052 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 18:28:56,364 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 18:28:56,364 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 18:28:56,587 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 18:28:56,587 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 18:38:56,029 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 18:38:56,340 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 18:38:56,341 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 18:38:56,567 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 18:38:56,568 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 18:58:55,567 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 18:58:55,887 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 18:58:55,888 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 18:58:56,122 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 18:58:56,123 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 19:28:56,042 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 19:28:56,375 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 19:28:56,376 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 19:28:56,599 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 19:28:56,600 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 19:38:55,882 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 19:38:56,200 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 19:38:56,200 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 19:38:56,423 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 19:38:56,424 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 19:58:55,301 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 19:58:55,628 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 19:58:55,628 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 19:58:55,855 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 19:58:55,856 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 20:28:55,740 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 20:28:56,107 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 20:28:56,108 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 20:28:56,356 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 20:28:56,357 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 20:38:55,634 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 20:38:55,971 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 20:38:55,971 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 20:38:56,210 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 20:38:56,211 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 20:58:56,032 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 20:58:56,343 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 20:58:56,343 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 20:58:56,565 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 20:58:56,565 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 21:28:56,220 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 21:28:56,534 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 21:28:56,534 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 21:28:56,761 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 21:28:56,761 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 21:38:56,067 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 21:38:56,380 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 21:38:56,381 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 21:38:56,595 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 21:38:56,596 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 21:58:55,645 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 21:58:55,973 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 21:58:55,973 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 21:58:56,191 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 21:58:56,192 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 22:28:56,309 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 22:28:56,687 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 22:28:56,687 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 22:28:56,930 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 22:28:56,931 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 22:38:56,272 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 22:38:56,597 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 22:38:56,598 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 22:38:56,828 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 22:38:56,829 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 22:58:55,764 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 22:58:56,089 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 22:58:56,090 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 22:58:56,339 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 22:58:56,340 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 23:28:56,011 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 23:28:56,329 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 23:28:56,330 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 23:28:56,567 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 23:28:56,567 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 23:38:56,859 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 23:38:57,206 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 23:38:57,207 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 23:38:57,476 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 23:38:57,476 - ApplicationLogger - INFO - Automations thread finished
+2025-02-04 23:58:56,500 - ApplicationLogger - INFO - Aplication started!!
+2025-02-04 23:58:56,813 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-04 23:58:56,813 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-04 23:58:57,038 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-04 23:58:57,038 - ApplicationLogger - INFO - Automations thread finished
+2025-02-05 00:28:56,710 - ApplicationLogger - INFO - Aplication started!!
+2025-02-05 00:28:57,035 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-05 00:28:57,036 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-05 00:28:57,259 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-05 00:28:57,260 - ApplicationLogger - INFO - Automations thread finished

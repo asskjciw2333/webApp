@@ -1,0 +1,235 @@
+2025-02-17 00:59:28,577 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 00:59:28,889 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 00:59:28,889 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 00:59:29,130 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 00:59:29,132 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 01:29:27,643 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 01:29:27,954 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 01:29:27,954 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 01:29:28,199 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 01:29:28,200 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 01:59:27,859 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 01:59:28,182 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 01:59:28,183 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 01:59:28,419 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 01:59:28,419 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 02:29:28,024 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 02:29:28,351 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 02:29:28,352 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 02:29:28,580 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 02:29:28,581 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 02:59:28,237 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 02:59:28,562 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 02:59:28,562 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 02:59:28,785 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 02:59:28,785 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 03:29:28,550 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 03:29:28,856 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 03:29:28,856 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 03:29:29,074 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 03:29:29,075 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 03:59:28,774 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 03:59:29,087 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 03:59:29,087 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 03:59:29,325 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 03:59:29,326 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 04:29:28,079 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 04:29:28,390 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 04:29:28,391 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 04:29:28,645 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 04:29:28,646 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 04:59:28,227 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 04:59:28,543 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 04:59:28,544 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 04:59:28,773 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 04:59:28,774 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 05:29:28,475 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 05:29:28,802 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 05:29:28,802 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 05:29:29,044 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 05:29:29,045 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 05:59:28,756 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 05:59:29,067 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 05:59:29,067 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 05:59:29,305 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 05:59:29,305 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 06:29:28,941 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 06:29:29,251 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 06:29:29,251 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 06:29:29,490 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 06:29:29,490 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 06:59:29,179 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 06:59:29,493 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 06:59:29,494 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 06:59:29,732 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 06:59:29,733 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 07:29:29,335 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 07:29:29,647 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 07:29:29,648 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 07:29:29,890 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 07:29:29,890 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 07:59:29,178 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 07:59:29,554 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 07:59:29,555 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 07:59:29,824 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 07:59:29,825 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 08:29:28,637 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 08:29:28,964 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 08:29:28,965 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 08:29:29,224 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 08:29:29,225 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 08:59:28,835 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 08:59:29,168 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 08:59:29,169 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 08:59:29,410 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 08:59:29,411 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 09:29:29,425 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 09:29:29,748 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 09:29:29,749 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 09:29:29,995 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 09:29:29,996 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 09:59:30,181 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 09:59:30,751 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 09:59:30,752 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 09:59:31,363 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 09:59:31,364 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 10:29:31,226 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 10:29:31,984 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 10:29:31,984 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 10:29:32,762 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 10:29:32,763 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 10:39:29,888 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 10:39:30,217 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 10:39:30,218 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 10:39:30,469 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 10:39:30,470 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 11:39:29,330 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 11:39:29,659 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 11:39:29,659 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 11:39:29,937 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 11:39:29,937 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 12:39:29,945 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 12:39:30,268 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 12:39:30,268 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 12:39:30,528 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 12:39:30,528 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 12:49:29,287 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 12:49:29,611 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 12:49:29,611 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 12:49:29,863 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 12:49:29,864 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 13:39:29,776 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 13:39:30,194 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 13:39:30,195 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 13:39:30,609 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 13:39:30,610 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 13:49:29,362 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 13:49:29,687 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 13:49:29,688 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 13:49:29,959 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 13:49:29,960 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 14:39:30,155 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 14:39:30,516 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 14:39:30,516 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 14:39:30,781 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 14:39:30,781 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 14:49:29,797 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 14:49:30,169 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 14:49:30,170 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 14:49:30,442 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 14:49:30,444 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 15:39:29,834 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 15:39:30,179 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 15:39:30,179 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 15:39:30,478 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 15:39:30,479 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 15:49:30,320 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 15:49:30,672 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 15:49:30,673 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 15:49:30,959 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 15:49:30,960 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 16:39:29,592 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 16:39:29,924 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 16:39:29,925 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 16:39:30,163 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 16:39:30,164 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 16:49:30,163 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 16:49:30,491 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 16:49:30,491 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 16:49:30,737 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 16:49:30,737 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 17:39:30,358 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 17:39:30,670 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 17:39:30,670 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 17:39:30,912 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 17:39:30,913 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 17:49:30,233 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 17:49:30,557 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 17:49:30,558 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 17:49:30,780 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 17:49:30,780 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 18:39:29,622 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 18:39:29,937 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 18:39:29,937 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 18:39:30,188 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 18:39:30,189 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 18:49:30,406 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 18:49:30,734 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 18:49:30,734 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 18:49:30,961 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 18:49:30,962 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 19:39:30,725 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 19:39:31,033 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 19:39:31,034 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 19:39:31,276 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 19:39:31,277 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 19:49:30,474 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 19:49:30,796 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 19:49:30,796 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 19:49:31,051 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 19:49:31,052 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 20:39:30,337 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 20:39:30,708 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 20:39:30,709 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 20:39:30,962 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 20:39:30,963 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 20:49:31,402 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 20:49:31,710 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 20:49:31,711 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 20:49:31,948 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 20:49:31,949 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 21:39:30,867 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 21:39:31,175 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 21:39:31,176 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 21:39:31,406 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 21:39:31,407 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 21:49:30,590 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 21:49:30,898 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 21:49:30,899 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 21:49:31,145 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 21:49:31,146 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 22:39:30,262 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 22:39:30,581 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 22:39:30,582 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 22:39:30,832 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 22:39:30,833 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 22:49:31,079 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 22:49:31,409 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 22:49:31,409 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 22:49:31,630 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 22:49:31,631 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 23:39:30,527 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 23:39:30,855 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 23:39:30,856 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 23:39:31,096 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 23:39:31,097 - ApplicationLogger - INFO - Automations thread finished
+2025-02-17 23:49:31,364 - ApplicationLogger - INFO - Aplication started!!
+2025-02-17 23:49:31,673 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-17 23:49:31,674 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-17 23:49:31,952 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-17 23:49:31,953 - ApplicationLogger - INFO - Automations thread finished
+2025-02-18 00:39:31,175 - ApplicationLogger - INFO - Aplication started!!
+2025-02-18 00:39:31,484 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-18 00:39:31,485 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-18 00:39:31,718 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-18 00:39:31,719 - ApplicationLogger - INFO - Automations thread finished

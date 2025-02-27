@@ -1,0 +1,66 @@
+/* Code Container */
+.code-container {
+    margin: var(--spacing-lg) 0;
+    position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#pre-code {
+    font-family: 'Consolas', monospace;
+    line-height: 1.5;
+    overflow-x: auto;
+    box-shadow: var(--shadow-md);
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: var(--spacing-lg);
+    font-size: 0.9rem;
+    border-radius: var(--radius-md);
+    white-space: pre-wrap;
+    direction: ltr;
+    text-align: left;
+    height: 300px;
+    width: 100%;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+#pre-code:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+/* Copy Button */
+#code-btn {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-xl);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    z-index: 1;
+}
+
+#code-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+#code-btn:active {
+    transform: translateY(0);
+}
+
+/* Success Icon */
+#code-btn.copied::after {
+    content: "✓";
+    margin-right: var(--spacing-sm);
+    color: var(--success-color);
+} 
