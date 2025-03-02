@@ -1026,3 +1026,35 @@ This approach ensures that I follow a logical sequence of actions as defined in 
 2025-02-27 15:17:21,991 - ApplicationLogger - DEBUG - Successfully loaded data from C:\project_test\app\omegaApp\data\servers\servers_3.json
 2025-02-27 15:17:21,991 - ApplicationLogger - INFO - ServerDataManager initialized successfully
 2025-02-27 15:17:24,003 - ApplicationLogger - INFO - Getting automations for user: admin
+2025-02-27 16:16:29,041 - ApplicationLogger - INFO - Aplication started!!
+2025-02-27 16:16:29,044 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-27 16:16:29,044 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-27 16:16:29,301 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-27 16:16:29,302 - ApplicationLogger - INFO - Automations thread finished
+2025-02-27 16:16:29,386 - ApplicationLogger - INFO - Initializing ChatManager
+2025-02-27 16:16:29,386 - ApplicationLogger - INFO - Loading config file: C:\project_test\app\omegaApp\config\intents.json
+2025-02-27 16:16:29,386 - ApplicationLogger - INFO - Successfully loaded intents.json
+2025-02-27 16:16:29,387 - ApplicationLogger - INFO - Loading config file: C:\project_test\app\omegaApp\config\actions.json
+2025-02-27 16:16:29,387 - ApplicationLogger - INFO - Successfully loaded actions.json
+2025-02-27 16:16:29,388 - ApplicationLogger - INFO - Registered API endpoint /api/dcim/search_assets for action find_server/search_assets
+2025-02-27 16:16:29,388 - ApplicationLogger - INFO - Registered API endpoint /api/dcim/search_servers for action find_server/search_servers
+2025-02-27 16:16:29,388 - ApplicationLogger - INFO - Registered API endpoint /api/automations/search_server for action upgrade_server/search_server
+2025-02-27 16:16:29,389 - ApplicationLogger - INFO - Registered API endpoint /api/automations/pull-fw-list-package for action upgrade_server/get_firmware_versions
+2025-02-27 16:16:29,389 - ApplicationLogger - INFO - Registered API endpoint /api/automations/prepare-automation for action upgrade_server/prepare_automation
+2025-02-27 16:16:29,389 - ApplicationLogger - INFO - Registered API endpoint /api/automations/start-automation for action upgrade_server/start_automation
+2025-02-27 16:16:30,465 - ApplicationLogger - INFO - Aplication started!!
+2025-02-27 16:16:30,468 - ApplicationLogger - INFO - Initializing room translations from ENV...
+2025-02-27 16:16:30,469 - ApplicationLogger - INFO - Loaded 3 translations from ENV
+2025-02-27 16:16:30,731 - ApplicationLogger - INFO - Registerd automation type: server_upgrade
+2025-02-27 16:16:30,732 - ApplicationLogger - INFO - Automations thread finished
+2025-02-27 16:16:30,788 - ApplicationLogger - INFO - Initializing ChatManager
+2025-02-27 16:16:30,788 - ApplicationLogger - INFO - Loading config file: C:\project_test\app\omegaApp\config\intents.json
+2025-02-27 16:16:30,789 - ApplicationLogger - INFO - Successfully loaded intents.json
+2025-02-27 16:16:30,789 - ApplicationLogger - INFO - Loading config file: C:\project_test\app\omegaApp\config\actions.json
+2025-02-27 16:16:30,789 - ApplicationLogger - INFO - Successfully loaded actions.json
+2025-02-27 16:16:30,790 - ApplicationLogger - INFO - Registered API endpoint /api/dcim/search_assets for action find_server/search_assets
+2025-02-27 16:16:30,790 - ApplicationLogger - INFO - Registered API endpoint /api/dcim/search_servers for action find_server/search_servers
+2025-02-27 16:16:30,790 - ApplicationLogger - INFO - Registered API endpoint /api/automations/search_server for action upgrade_server/search_server
+2025-02-27 16:16:30,791 - ApplicationLogger - INFO - Registered API endpoint /api/automations/pull-fw-list-package for action upgrade_server/get_firmware_versions
+2025-02-27 16:16:30,791 - ApplicationLogger - INFO - Registered API endpoint /api/automations/prepare-automation for action upgrade_server/prepare_automation
+2025-02-27 16:16:30,791 - ApplicationLogger - INFO - Registered API endpoint /api/automations/start-automation for action upgrade_server/start_automation
