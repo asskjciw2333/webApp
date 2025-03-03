@@ -1,9 +1,10 @@
 import json
 import os
 import importlib
-from typing import Dict, Any, List, Callable
+from typing import Dict, Any, List, Callable, Optional
 from flask import current_app
 from .logger_manager import LoggerManager
+from .conversation_state import ConversationState
 import asyncio
 import aiohttp
 
@@ -15,6 +16,7 @@ class ChatManager:
         self.intents = self._load_json_config('intents.json')
         self.actions = self._load_json_config('actions.json')
         self.function_registry = self._initialize_function_registry()
+        self.conversation_state = ConversationState()
         
     def _load_json_config(self, filename: str) -> Dict:
         """Load JSON configuration file from config directory"""
@@ -120,18 +122,34 @@ Return only a JSON object with:
         """Main entry point for handling user messages"""
         logger.info(f"Handling message: {message}")
         
+        # Check for pending questions first
+        if self.conversation_state.has_pending_questions():
+            question = self.conversation_state.get_next_question()
+            if (question):
+                # Use the answer to update context
+                self.conversation_state.update_context(
+                    question.get("context_key", "last_answer"), 
+                    message
+                )
+                # Analyze if we can proceed with the next action
+                return await self._continue_action_chain()
+        
         # First detect the intent
         intent = await self.detect_intent(message, chat_history)
         logger.info(f"Detected intent: {intent}")
         
+        # Set the current intent in conversation state
+        self.conversation_state.set_current_intent(intent)
+        
         # If it's a regular chat, handle as conversation
         if intent["name"] == "chat" or intent["name"] == "unknown":
             logger.info("Handling as regular chat")
+            self.conversation_state.clear_state()
             return await self._handle_chat(message, chat_history)
             
         # For process/action intents, let LLM decide how to proceed
         logger.info("Handling as action")
-        return await self._handle_action(intent, message, chat_history)
+        return await self._handle_action_with_state(intent, message, chat_history)
     
     async def _handle_chat(self, message: str, chat_history: List[Dict[str, str]]) -> Dict[str, Any]:
         """Handle regular chat messages"""
@@ -160,91 +178,258 @@ Return only a JSON object with:
             logger.warning(f"No action found for intent {intent['name']}, falling back to chat")
             return await self._handle_chat(message, chat_history)
             
-        # Ask LLM to decide what to do with this action
-        formatted_history = self._format_chat_history(chat_history)
-        prompt = f"""Based on this action configuration and conversation history, determine how to proceed:
+        # Get available endpoints for this action
+        available_endpoints = [action.get("path") for action in matching_action.get("actions", [])]
+        
+        # For each endpoint, analyze required parameters and try to extract them
+        best_match = None
+        highest_complete_params = -1
+        
+        for endpoint in available_endpoints:
+            # Analyze function parameters
+            param_info = self._analyze_function_parameters(endpoint)
+            
+            # Try to extract parameters from message
+            extracted = self._extract_parameters_from_message(message, param_info)
+            
+            # Calculate how many required parameters we found
+            found_required = len(param_info["required_params"]) - len(extracted["missing_params"])
+            
+            # Update best match if this endpoint has more complete parameters
+            if found_required > highest_complete_params:
+                highest_complete_params = found_required
+                best_match = {
+                    "endpoint": endpoint,
+                    "extracted_params": extracted["extracted_params"],
+                    "missing_params": extracted["missing_params"],
+                    "param_info": param_info
+                }
+        
+        if not best_match:
+            return {
+                "type": "error",
+                "message": "Could not find suitable endpoint for this action"
+            }
+            
+        # If we have missing parameters, ask for them
+        if best_match["missing_params"]:
+            # Generate questions for missing parameters
+            questions = []
+            for param in best_match["missing_params"]:
+                description = best_match["param_info"]["param_descriptions"].get(param, param)
+                questions.append({
+                    "param_name": param,
+                    "question": f"Please provide {description}"
+                })
+                
+            return {
+                "type": "action",
+                "action": intent["name"],
+                "response": "I need some additional information to proceed",
+                "requires_input": True,
+                "missing_params": questions,
+                "context": {
+                    "endpoint": best_match["endpoint"],
+                    "current_params": best_match["extracted_params"]
+                }
+            }
+        
+        # If we have all parameters, proceed with the action
+        try:
+            api_result = await self.call_api(best_match["endpoint"], best_match["extracted_params"])
+            
+            return {
+                "type": "action",
+                "action": intent["name"],
+                "response": "Executing the requested action",
+                "result": api_result
+            }
+            
+        except Exception as e:
+            logger.error(f"Error executing action: {str(e)}")
+            return {
+                "type": "error",
+                "message": f"Error executing action: {str(e)}"
+            }
+
+    async def _handle_action_with_state(self, intent: Dict[str, Any], message: str, chat_history: List[Dict[str, str]]) -> Dict[str, Any]:
+        try:
+            # Find action configuration
+            matching_action = None
+            for action in self.actions.get("api", {}).get("action", []):
+                if action.get("name") == intent["name"]:
+                    matching_action = action
+                    break
+
+            if not matching_action:
+                logger.warning(f"No action found for intent {intent['name']}, falling back to chat")
+                return await self._handle_chat(message, chat_history)
+
+            # Get current context
+            context = self.conversation_state.get_context_for_next_action()
+
+            # Ask LLM to analyze and decide next steps
+            prompt = await self._generate_action_prompt(matching_action, message, chat_history, context)
+
+            logger.info("Sending action analysis prompt to LLM")
+            response = await current_app.llm_client.generate_response([
+                {"role": "system", "content": prompt}
+            ])
+
+            result = self._clean_json_response(response)
+            if not result:
+                logger.error("Failed to parse LLM response for action analysis")
+                return {
+                    "type": "error",
+                    "message": "Could not determine how to proceed"
+                }
+
+            # Check if we need more information
+            if result.get("requires_more_info", False):
+                # Add questions to state
+                for question in result.get("missing_params", []):
+                    self.conversation_state.add_pending_question({
+                        "text": question["question"],
+                        "context_key": question["param_name"]
+                    })
+
+                return {
+                    "type": "action",
+                    "action": intent["name"],
+                    "response": result.get("response"),
+                    "thinking_process": result.get("thinking_process", ""),
+                    "requires_input": True,
+                    "question": self.conversation_state.get_next_question()
+                }
+
+            # Execute the decided action
+            if result.get("endpoint"):
+                try:
+                    api_result = await self.call_api(result["endpoint"], result.get("parameters", {}))
+
+                    # Store the result in conversation state with success status
+                    self.conversation_state.add_action_result(
+                        result["endpoint"],
+                        api_result,
+                        status="success" if api_result.get("status") != "error" else "error",
+                        description=result.get("thinking_process", "")
+                    )
+
+                    # Analyze results to determine next steps
+                    next_steps = await self.analyze_results(api_result)
+
+                    return {
+                        "type": "action",
+                        "action": intent["name"],
+                        "response": result.get("response"),
+                        "thinking_process": result.get("thinking_process", ""),
+                        "action_steps": result.get("action_steps", []),
+                        "result": api_result,
+                        "next_steps": next_steps
+                    }
+
+                except Exception as e:
+                    error_msg = str(e)
+                    logger.error(f"Error executing action: {error_msg}")
+                    self.conversation_state.add_action_result(
+                        result["endpoint"],
+                        {},
+                        status="error",
+                        description="Error executing action",
+                        error=error_msg
+                    )
+                    return {
+                        "type": "error",
+                        "message": f"Error executing action: {error_msg}"
+                    }
+
+            return {
+                "type": "error",
+                "message": "No endpoint specified in action result"
+            }
+
+        except Exception as e:
+            logger.error(f"Error handling action: {str(e)}")
+            return {
+                "type": "error",
+                "message": "אירעה שגיאה בביצוע הפעולה. אנא נסה שוב."
+            }
+
+    async def analyze_results(self, results: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze API results and determine next steps"""
+        context = self.conversation_state.get_context_for_next_action()
+        
+        prompt = f"""Based on these API results and current context, determine what should be done next:
+
+Current Context:
+{json.dumps(context, indent=2, ensure_ascii=False)}
+
+Latest API Results:
+{json.dumps(results, indent=2, ensure_ascii=False)}
+
+Return a JSON object with:
+1. next_action: Next action to take (or "complete" if done)
+2. explanation: Why this next action is needed
+3. parameters: Any parameters needed for the next action
+4. user_message: Message to show to the user about what's happening"""
+
+        response = await current_app.llm_client.generate_response([
+            {"role": "system", "content": prompt}
+        ])
+        
+        result = self._clean_json_response(response)
+        return result if result else {
+            "next_action": "complete",
+            "explanation": "Could not determine next steps",
+            "parameters": {},
+            "user_message": "המשימה הושלמה"
+        }
+
+    async def _continue_action_chain(self) -> Dict[str, Any]:
+        """Continue executing actions after receiving user input"""
+        context = self.conversation_state.get_context_for_next_action()
+        current_intent = context["current_intent"]
+        
+        if not current_intent:
+            logger.error("No current intent found when continuing action chain")
+            return {
+                "type": "error",
+                "message": "Could not continue the process - missing context"
+            }
+            
+        return await self._handle_action_with_state(
+            current_intent,
+            "",  # No new message needed as we're continuing existing flow
+            []  # Empty chat history as context is in state
+        )
+
+    async def _generate_action_prompt(self, action_config: Dict[str, Any], message: str, 
+                                    chat_history: List[Dict[str, str]], context: Dict[str, Any]) -> str:
+        """Generate a detailed prompt for action analysis"""
+        return f"""Based on this action configuration, conversation history, and current context, determine how to proceed:
 
 Previous conversation:
-{formatted_history}
+{self._format_chat_history(chat_history)}
+
+Latest message: {message}
+
+Current Context:
+{json.dumps(context, indent=2, ensure_ascii=False)}
 
 Action Configuration:
-{json.dumps(matching_action, indent=2, ensure_ascii=False)}
+{json.dumps(action_config, indent=2, ensure_ascii=False)}
 
 Available API Endpoints:
-{json.dumps([action.get("path") for action in matching_action.get("actions", [])], indent=2, ensure_ascii=False)}
-
-Extracted parameters from last message: {json.dumps(intent.get('extracted_params', {}), ensure_ascii=False)}
+{json.dumps([action.get("path") for action in action_config.get("actions", [])], indent=2, ensure_ascii=False)}
 
 Return a JSON object with:
 1. endpoint: The API endpoint path to call
 2. parameters: Parameters needed for the endpoint based on its required parameters
 3. response: Natural language response to show the user explaining what will be done
-4. thinking_process: A detailed explanation of your thought process (e.g., "I need to search for server X to get its details")
-5. action_steps: An array of steps you'll take to complete this action (e.g. ["Searching for server", "Retrieving server details", "Checking server status"])
+4. thinking_process: A detailed explanation of your thought process
+5. action_steps: Array of steps you'll take to complete this action
 6. requires_more_info: true if more information is needed from the user
-7. missing_params: list of missing parameter names if requires_more_info is true"""
-
-        logger.info("Sending prompt to LLM")
-        response = await current_app.llm_client.generate_response([
-            {"role": "system", "content": prompt}
-        ])
-        logger.info(f"LLM response received: {response}")
-        
-        result = self._clean_json_response(response)
-        if not result:
-            logger.error("Failed to parse LLM response as JSON")
-            return {
-                "type": "error",
-                "message": "Could not determine how to proceed"
-            }
-
-        endpoint = result.get("endpoint")
-        parameters = result.get("parameters", {})
-        requires_more_info = result.get("requires_more_info", False)
-        missing_params = result.get("missing_params", [])
-        thinking_process = result.get("thinking_process", "")
-        action_steps = result.get("action_steps", [])
-        
-        # If we need more information from the user
-        if requires_more_info:
-            return {
-                "type": "action",
-                "action": intent["name"],
-                "response": result.get("response"),
-                "thinking_process": thinking_process,
-                "action_steps": action_steps,
-                "requires_input": True,
-                "missing_params": missing_params
-            }
-        
-        # Execute the API call if we have all parameters
-        if endpoint in self.function_registry:
-            try:
-                # Here you would implement the actual API call using the endpoint and parameters
-                # This is a placeholder - you'll need to implement the actual API calling logic
-                api_result = await self.call_api(endpoint, parameters)
-                
-                return {
-                    "type": "action",
-                    "action": intent["name"],
-                    "response": result.get("response"),
-                    "thinking_process": thinking_process,
-                    "action_steps": action_steps,
-                    "result": api_result
-                }
-                
-            except Exception as e:
-                logger.error(f"Error calling endpoint {endpoint}: {str(e)}")
-                return {
-                    "type": "error",
-                    "message": f"Error executing action: {str(e)}"
-                }
-        else:
-            logger.error(f"Endpoint {endpoint} not found in registry")
-            return {
-                "type": "error", 
-                "message": f"API endpoint {endpoint} not available"
-            }
+7. missing_params: array of objects with "param_name" and "question" if requires_more_info is true"""
 
     async def call_api(self, endpoint: str, parameters: dict) -> Any:
         """Call the API endpoint with the given parameters"""
@@ -297,4 +482,74 @@ Return a JSON object with:
             }
         
         return await response.json()
+
+    def _analyze_function_parameters(self, endpoint: str) -> Dict[str, Any]:
+        """Analyze function parameters and their requirements"""
+        if endpoint not in self.function_registry:
+            return {}
+            
+        func_info = self.function_registry[endpoint]
+        return {
+            "required_params": func_info.get("parameters", {}).get("required", []),
+            "optional_params": [
+                param for param in func_info.get("parameters", {}).get("properties", {}).keys()
+                if param not in func_info.get("parameters", {}).get("required", [])
+            ],
+            "param_descriptions": {
+                param: details.get("description", "")
+                for param, details in func_info.get("parameters", {}).get("properties", {}).items()
+            }
+        }
+
+    async def _extract_parameters_from_message(self, message: str, param_info: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Extract parameters from user message based on parameter requirements
+        Returns found parameters and missing required parameters
+        """
+        extracted_params = {}
+        missing_params = []
+        
+        # Create LLM prompt for parameter extraction
+        prompt = f"""Analyze this message and extract parameters based on these requirements:
+
+Message: {message}
+
+Required parameters:
+{json.dumps(param_info['required_params'], indent=2, ensure_ascii=False)}
+
+Parameter descriptions:
+{json.dumps(param_info['param_descriptions'], indent=2, ensure_ascii=False)}
+
+Look for:
+1. Explicitly mentioned parameter values
+2. Contextual clues that imply parameter values
+3. Technical terms or identifiers that match parameter descriptions
+
+Return a JSON object with:
+1. found_params: Dictionary of parameter names and their found values
+2. missing_params: List of required parameters that weren't found
+3. confidence: Confidence score (0-1) for each found parameter"""
+
+        try:
+            # Get LLM response for parameter extraction
+            response = await current_app.llm_client.generate_response([
+                {"role": "system", "content": prompt}
+            ])
+            
+            result = self._clean_json_response(response)
+            
+            if result:
+                extracted_params = result.get("found_params", {})
+                missing_params = result.get("missing_params", [])
+                # Store confidence scores for future use
+                self.conversation_state.update_context("param_confidence", result.get("confidence", {}))
+                
+        except Exception as e:
+            logger.error(f"Error extracting parameters: {str(e)}")
+            missing_params = param_info["required_params"]
+            
+        return {
+            "extracted_params": extracted_params,
+            "missing_params": missing_params
+        }
 

@@ -1,0 +1,237 @@
+/* Existing chat styles */
+// ...existing code...
+
+/* State indicator styles */
+.state-indicator {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px 0;
+    font-size: 0.9em;
+}
+
+.state-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.current-intent {
+    font-weight: 500;
+    color: #2c5282;
+}
+
+.actions-count {
+    color: #4a5568;
+}
+
+.pending-questions {
+    color: #c53030;
+}
+
+/* Action response styles */
+.action-response {
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+.response-text {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+}
+
+.thinking-process {
+    background: #edf2f7;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.thinking-header {
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 6px;
+}
+
+.thinking-content {
+    color: #718096;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.action-steps {
+    margin: 12px 0;
+}
+
+.steps-header {
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.steps-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    color: #4a5568;
+}
+
+.step:before {
+    content: "•";
+    color: #4299e1;
+    margin-right: 8px;
+}
+
+/* Question styles */
+.chat-question {
+    background: #ebf8ff;
+    border: 1px solid #90cdf4;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+.question-text {
+    font-weight: 500;
+    color: #2b6cb0;
+    margin-bottom: 6px;
+}
+
+.question-hint {
+    font-size: 0.9em;
+    color: #4a5568;
+}
+
+/* Next steps styles */
+.next-steps {
+    background: #f0fff4;
+    border: 1px solid #9ae6b4;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+.next-step-header {
+    font-weight: 500;
+    color: #276749;
+    margin-bottom: 6px;
+}
+
+.next-step-explanation {
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.next-step-message {
+    font-weight: 500;
+    color: #2f855a;
+}
+
+/* Action result styles */
+.action-result {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.result-header {
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.result-content {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 0.9em;
+    white-space: pre-wrap;
+}
+
+/* Enhanced typing indicator */
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 4px 8px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.typing-indicator span {
+    width: 8px;
+    height: 8px;
+    background: #4299e1;
+    border-radius: 50%;
+    animation: typing 1s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(1) { animation-delay: 0.1s; }
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes typing {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+
+/* Status indicators */
+.status {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.status.success { background: #c6f6d5; color: #276749; }
+.status.error { background: #fed7d7; color: #c53030; }
+.status.running { background: #bee3f8; color: #2c5282; }
+.status.waiting { background: #feebc8; color: #9c4221; }
+
+/* Enhanced transitions */
+.chat-message {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.chat-message.typing {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.chat-message.typing.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Accessibility improvements */
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .typing-indicator span {
+        animation: none;
+    }
+    
+    .chat-message {
+        transition: none;
+    }
+}

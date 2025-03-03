@@ -47,10 +47,10 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    logger_mamager = LoggerManager(log_file="omegaApp.log")
-    logger = logger_mamager.get_logger()
-
-    logger.info("Aplication started!!")
+    # Initialize logger with JSON config
+    LoggerManager(config_file='logging.json')
+    logger = LoggerManager().get_logger()
+    logger.info("Initializing application")
 
     from . import db
 

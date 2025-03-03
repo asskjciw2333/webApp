@@ -1,8 +1,10 @@
 import logging
 import logging.handlers
 import os
+import json
+import logging.config
 from typing import List, Optional
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from shutil import copy2
 
 
@@ -15,111 +17,91 @@ class LoggerManager:
         return cls._instance
 
     def __init__(self, log_dir: str = 'logs', log_file: str = 'application.log', 
-                 log_level: int = logging.DEBUG, console_output: bool = True):
+                 log_level: int = logging.DEBUG, console_output: bool = True,
+                 config_file: str = None):
         if not hasattr(self, 'logger'):
             # Create logs directory if it doesn't exist
             os.makedirs(log_dir, exist_ok=True)
             
-            self.logger = logging.getLogger('ApplicationLogger')
-            self.logger.setLevel(log_level)
             self.log_dir = log_dir
             self.log_file = os.path.join(log_dir, log_file)
-            self.log_level = log_level  # Store for later use
+            self.log_level = log_level
             
-            formatter = logging.Formatter(
-                '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            if config_file:
+                self._setup_from_config(config_file)
+            else:
+                self._setup_default_logger(console_output)
 
-            # Console handler
-            if console_output:
-                console_handler = logging.StreamHandler()
-                console_handler.setLevel(logging.INFO)
-                console_handler.setFormatter(formatter)
-                self.logger.addHandler(console_handler)
+    def _setup_from_config(self, config_file: str) -> None:
+        """Setup logging using a JSON configuration file"""
+        try:
+            config_path = os.path.join(os.path.dirname(__file__), 'config', config_file)
+            with open(config_path, 'r') as f:
+                config = json.load(f)
+                
+            # Update file paths to be relative to log_dir
+            if 'handlers' in config:
+                for handler in config['handlers'].values():
+                    if 'filename' in handler:
+                        handler['filename'] = os.path.join(self.log_dir, os.path.basename(handler['filename']))
+            
+            logging.config.dictConfig(config)
+            self.logger = logging.getLogger('agent')
+            
+        except Exception as e:
+            print(f"Error loading logging config: {str(e)}")
+            # Fallback to default logging
+            self._setup_default_logger(True)
 
-            # Timed rotating file handler - rotates at midnight each day
-            self._setup_file_handler()
-
-    def _setup_file_handler(self):
-        """Setup or reset the file handler"""
+    def _setup_default_logger(self, console_output: bool) -> None:
+        """Setup default logging configuration"""
+        self.logger = logging.getLogger('ApplicationLogger')
+        self.logger.setLevel(self.log_level)
+        
         formatter = logging.Formatter(
             '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            
-        try:
-            # Remove existing file handlers if any
-            for handler in self.logger.handlers[:]:
-                if isinstance(handler, logging.handlers.TimedRotatingFileHandler):
-                    try:
-                        handler.close()  # Explicitly close the handler
-                    except:
-                        pass
-                    self.logger.removeHandler(handler)
 
-            # Create a new file handler with a more Windows-friendly configuration
-            file_handler = logging.handlers.TimedRotatingFileHandler(
-                self.log_file,
-                when='midnight',
-                interval=1,
-                backupCount=30,  # Keep logs for 30 days
-                encoding='utf-8',
-                delay=True  # Delay file creation until first log
-            )
-            
-            file_handler.setLevel(self.log_level)
-            file_handler.setFormatter(formatter)
-            file_handler.suffix = "%Y-%m-%d"
-            
-            # Set our custom rotator
-            file_handler.rotator = lambda source, dest: self._rotate_file(source, dest)
-            
-            self.logger.addHandler(file_handler)
-            
-            # Check if immediate rotation is needed
-            if os.path.exists(self.log_file):
-                file_stat = os.stat(self.log_file)
-                creation_time = datetime.fromtimestamp(min(file_stat.st_ctime, file_stat.st_mtime))
-                if creation_time.date() < datetime.now().date():
-                    try:
-                        file_handler.doRollover()
-                    except Exception as e:
-                        print(f"Warning: Could not perform initial rotation: {e}")
-                    
-        except Exception as e:
-            print(f"Error setting up timed rotating file handler: {e}")
-            # Create a basic file handler as fallback
-            try:
-                basic_handler = logging.FileHandler(self.log_file, encoding='utf-8')
-                basic_handler.setFormatter(formatter)
-                basic_handler.setLevel(self.log_level)
-                self.logger.addHandler(basic_handler)
-            except Exception as e2:
-                print(f"Error setting up fallback file handler: {e2}")
+        # Console handler
+        if console_output:
+            console_handler = logging.StreamHandler()
+            console_handler.setLevel(logging.INFO)
+            console_handler.setFormatter(formatter)
+            self.logger.addHandler(console_handler)
 
-    def check_rotation(self):
-        """
-        Check if we need to force a rotation of the log file by checking its creation date.
-        This should be called periodically, for example before writing important logs.
-        """
-        if not os.path.exists(self.log_file):
-            self._setup_file_handler()
-            return
-            
-        # Get file creation time (using the earliest of creation or modification time)
-        file_stat = os.stat(self.log_file)
-        creation_time = datetime.fromtimestamp(min(file_stat.st_ctime, file_stat.st_mtime))
+        # Timed rotating file handler - rotates at midnight each day
+        self._setup_file_handler()
+
+    def _setup_file_handler(self) -> None:
+        """Setup the timed rotating file handler"""
+        # Get current date for log file name
+        current_date = datetime.now().strftime('%Y-%m-%d')
+        log_file = self.log_file + f'.{current_date}'
         
-        # If the file was created on a different day, force immediate rotation
-        if creation_time.date() < datetime.now().date():
-            # Get the current handler
-            for handler in self.logger.handlers[:]:
-                if isinstance(handler, logging.handlers.TimedRotatingFileHandler):
-                    # Force rotation now
+        handler = logging.handlers.TimedRotatingFileHandler(
+            log_file,
+            when='midnight',
+            interval=1,
+            backupCount=30,
+            encoding='utf-8'
+        )
+        handler.setLevel(self.log_level)
+        handler.setFormatter(logging.Formatter(
+            '%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+        
+        self.logger.addHandler(handler)
+
+    def check_rotation(self) -> None:
+        """Check if log file needs rotation"""
+        current_date = datetime.now().date()
+        
+        for handler in self.logger.handlers:
+            if isinstance(handler, logging.handlers.TimedRotatingFileHandler):
+                if (handler.rolloverAt and 
+                    datetime.fromtimestamp(handler.rolloverAt).date() <= current_date):
                     handler.doRollover()
-                    return
-            
-            # If no handler found, set up a new one
-            self._setup_file_handler()
 
     def get_logger(self) -> logging.Logger:
+        """Get the logger instance"""
         # Check rotation before returning logger
         self.check_rotation()
         return self.logger

@@ -352,7 +352,7 @@ class ChatInterface {
         this.addMessage(message, 'user');
         
         try {
-            // Add typing indicator
+            // Add thinking indicator
             const typingIndicator = this.addTypingIndicator();
             
             // Send to server with chat history
@@ -377,163 +377,37 @@ class ChatInterface {
             if (typingIndicator) {
                 typingIndicator.remove();
             }
+
+            // Handle state summary if available
+            if (result.state_summary) {
+                this.updateStateDisplay(result.state_summary);
+            }
             
-            // Make sure all typing indicators are removed
-            const allTypingIndicators = this.messagesContainer.querySelectorAll('.chat-message.typing');
-            allTypingIndicators.forEach(indicator => indicator.remove());
-            
-            // Handle different response types
+            // Handle different response types with enhanced agent capabilities
             if (result.type === 'chat') {
                 // Regular chat response
                 this.addMessage(result.response, 'bot');
             } else if (result.type === 'action') {
-                // Action response - Show step by step agent-like behavior with timeline
+                // Action response with thinking process display
+                const actionContent = this.createActionResponse(result);
+                this.addMessage(actionContent, 'bot', true, false);
                 
-                // Get the action steps from the server or use default steps
-                const actionSteps = result.action_steps && result.action_steps.length > 0 
-                    ? result.action_steps 
-                    : [
-                        "Understanding your request",
-                        "Processing the information",
-                        "Preparing results"
-                    ];
-                
-                // Create a container for the agent timeline
-                const timelineContainer = document.createElement('div');
-                timelineContainer.className = 'chat-message bot-message thinking-container';
-                
-                // Create a collapsible section for the thinking process
-                const thinkingHeader = document.createElement('div');
-                thinkingHeader.className = 'thinking-header';
-                thinkingHeader.innerHTML = `
-                    <span class="thinking-title">חשיבה ועיבוד</span>
-                    <button class="thinking-toggle">
-                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                `;
-                
-                const thinkingContent = document.createElement('div');
-                thinkingContent.className = 'thinking-content collapsed';
-                
-                // Create the timeline HTML
-                let timelineHTML = '<div class="agent-timeline">';
-                
-                // Add the first step - understanding
-                timelineHTML += `
-                    <div class="timeline-step active" id="step-0">
-                        <div class="timeline-step-content">
-                            <strong>${actionSteps[0]}</strong>
-                            <p>I'm analyzing what you need...</p>
-                        </div>
-                    </div>
-                `;
-                
-                timelineHTML += '</div>';
-                thinkingContent.innerHTML = timelineHTML;
-                
-                // Add the header and content to the container
-                timelineContainer.appendChild(thinkingHeader);
-                timelineContainer.appendChild(thinkingContent);
-                
-                // Add event listener to toggle the thinking content
-                thinkingHeader.addEventListener('click', () => {
-                    thinkingContent.classList.toggle('collapsed');
-                    thinkingHeader.querySelector('.thinking-toggle').classList.toggle('expanded');
-                });
-                
-                this.messagesContainer.appendChild(timelineContainer);
-                this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;
-                
-                // Wait a moment to show the first step
-                await new Promise(resolve => setTimeout(resolve, 800));
-                
-                // Update the first step to complete and add the thinking process
-                const timeline = thinkingContent.querySelector('.agent-timeline');
-                const firstStep = timeline.querySelector('#step-0');
-                firstStep.classList.remove('active');
-                firstStep.classList.add('complete');
-                firstStep.querySelector('.timeline-step-content').innerHTML = `
-                    <strong>${actionSteps[0]} - Complete</strong>
-                    <p>${result.thinking_process || 'I understand what you need.'}</p>
-                `;
-                
-                // Process the remaining steps
-                for (let i = 1; i < actionSteps.length; i++) {
-                    // Add the next step
-                    const stepElement = document.createElement('div');
-                    stepElement.className = 'timeline-step active';
-                    stepElement.id = `step-${i}`;
-                    stepElement.innerHTML = `
-                        <div class="timeline-step-content">
-                            <strong>${actionSteps[i]}</strong>
-                            <p>Working on this step...</p>
-                        </div>
-                    `;
-                    timeline.appendChild(stepElement);
-                    
-                    // Wait a moment to simulate processing
-                    await new Promise(resolve => setTimeout(resolve, 800 + Math.random() * 400));
-                    
-                    // Update the step to complete
-                    stepElement.classList.remove('active');
-                    stepElement.classList.add('complete');
-                    stepElement.querySelector('.timeline-step-content').innerHTML = `
-                        <strong>${actionSteps[i]} - Complete</strong>
-                        <p>This step has been completed successfully.</p>
-                    `;
+                // If we need more input from the user
+                if (result.requires_input && result.question) {
+                    this.addQuestion(result.question);
                 }
                 
-                // Save the thinking container to message history before adding response messages
-                // We need to clone the container to avoid modifying the displayed one
-                const timelineContainerClone = timelineContainer.cloneNode(true);
-                
-                // Make sure the thinking content is collapsed by default when saved
-                const thinkingContentClone = timelineContainerClone.querySelector('.thinking-content');
-                if (thinkingContentClone) {
-                    thinkingContentClone.classList.add('collapsed');
+                // If there are next steps, display them
+                if (result.next_steps) {
+                    this.displayNextSteps(result.next_steps);
                 }
-                
-                // Remove any expanded classes from toggle buttons
-                const toggleButtons = timelineContainerClone.querySelectorAll('.thinking-toggle');
-                toggleButtons.forEach(toggle => toggle.classList.remove('expanded'));
-                
-                this.messageHistory.push({
-                    role: 'assistant',
-                    content: timelineContainerClone.outerHTML
-                });
-                
-                // Now show the actual result
-                let responseText = result.response;
-                
-                if (result.result) {
-                    // Check if the result is a server result that needs special handling
-                    if (result.result.data && (result.result.data.name || result.result.data.dn)) {
-                        // For server results, add the formatted HTML directly
-                        const serverResultHtml = this.formatServerResult(result.result);
-                        this.addMessage(responseText, 'bot');
-                        this.addMessage(serverResultHtml, 'bot');
-                    } else {
-                        // Format the result nicely and add it to the response
-                        const formattedResult = this.formatActionResult(result.result);
-                        responseText += '\n\n' + formattedResult;
-                        this.addMessage(responseText, 'bot');
-                    }
-                } else {
-                    this.addMessage(responseText, 'bot');
-                }
-                
-                // Save chat state
-                this.saveChatState();
             } else if (result.type === 'error') {
-                // Error response
-                this.addMessage('Sorry, an error occurred: ' + result.message, 'bot');
+                this.addMessage(`שגיאה: ${result.message}`, 'bot', true, false);
             }
             
         } catch (error) {
             console.error('Error sending message:', error);
-            this.addMessage('Sorry, something went wrong. Please try again.', 'bot');
+            this.addMessage('מצטער, אירעה שגיאה. אנא נסה שוב.', 'bot');
             
             // Remove all typing indicators
             const allTypingIndicators = this.messagesContainer.querySelectorAll('.chat-message.typing');
@@ -541,7 +415,91 @@ class ChatInterface {
         }
         
         this.isProcessing = false;
-        this.chatWindow.querySelector('.chat-messages').scrollTop = this.chatWindow.querySelector('.chat-messages').scrollHeight;
+        this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;
+    }
+
+    createActionResponse(result) {
+        const steps = result.action_steps || [];
+        const thinkingProcess = result.thinking_process || '';
+        
+        let content = `<div class="action-response">
+            <div class="response-text">${result.response}</div>`;
+            
+        if (thinkingProcess) {
+            content += `
+            <div class="thinking-process">
+                <div class="thinking-header">תהליך החשיבה שלי:</div>
+                <div class="thinking-content">${thinkingProcess}</div>
+            </div>`;
+        }
+        
+        if (steps.length > 0) {
+            content += `
+            <div class="action-steps">
+                <div class="steps-header">שלבי הפעולה:</div>
+                <ul class="steps-list">
+                    ${steps.map(step => `<li class="step">${step}</li>`).join('')}
+                </ul>
+            </div>`;
+        }
+        
+        if (result.result) {
+            content += `
+            <div class="action-result">
+                <div class="result-header">תוצאות:</div>
+                <div class="result-content">${this.formatActionResult(result.result)}</div>
+            </div>`;
+        }
+        
+        content += '</div>';
+        return content;
+    }
+
+    addQuestion(question) {
+        const content = `
+        <div class="chat-question">
+            <div class="question-text">${question.text}</div>
+            <div class="question-hint">אנא ענה לשאלה זו כדי שאוכל להמשיך</div>
+        </div>`;
+        this.addMessage(content, 'bot', true, false);
+    }
+
+    displayNextSteps(nextSteps) {
+        if (nextSteps.next_action === 'complete') {
+            this.addMessage(nextSteps.user_message, 'bot');
+            return;
+        }
+        
+        const content = `
+        <div class="next-steps">
+            <div class="next-step-header">הצעד הבא:</div>
+            <div class="next-step-explanation">${nextSteps.explanation}</div>
+            <div class="next-step-message">${nextSteps.user_message}</div>
+        </div>`;
+        this.addMessage(content, 'bot', true, false);
+    }
+
+    updateStateDisplay(stateSummary) {
+        const stateIndicator = this.chatWindow.querySelector('.state-indicator') || 
+                             this.createStateIndicator();
+        
+        const activeIntent = stateSummary.intent || 'שיחה';
+        const actionsCount = stateSummary.executed_actions_count || 0;
+        const pendingQuestions = stateSummary.pending_questions_count || 0;
+        
+        stateIndicator.innerHTML = `
+        <div class="state-content">
+            <div class="current-intent">כוונה נוכחית: ${activeIntent}</div>
+            <div class="actions-count">פעולות שבוצעו: ${actionsCount}</div>
+            ${pendingQuestions > 0 ? `<div class="pending-questions">שאלות ממתינות: ${pendingQuestions}</div>` : ''}
+        </div>`;
+    }
+
+    createStateIndicator() {
+        const indicator = document.createElement('div');
+        indicator.className = 'state-indicator';
+        this.chatWindow.querySelector('.chat-header').appendChild(indicator);
+        return indicator;
     }
 
     formatActionResult(result) {
@@ -1332,4 +1290,4 @@ class ChatInterface {
 
 document.addEventListener('DOMContentLoaded', () => {
     new ChatInterface();
-}); 
+});
