@@ -1,0 +1,64 @@
+/* Server result styling */
+.server-result {
+    background: var(--background-color-secondary);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    margin: var(--spacing-md) 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.server-result-header {
+    background: var(--primary-color);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.server-result-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.server-status {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.server-status.success {
+    background: #28a745;
+}
+
+.server-status.error {
+    background: #dc3545;
+}
+
+.server-status.warning {
+    background: #ffc107;
+    color: #212529;
+}
+
+.server-details {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.server-details td {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.server-details tr:last-child td {
+    border-bottom: none;
+}
+
+.server-details td:first-child {
+    font-weight: 600;
+    width: 30%;
+    background: rgba(0, 0, 0, 0.03);
+} 

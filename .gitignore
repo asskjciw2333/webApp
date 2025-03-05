@@ -47,3 +47,7 @@ venv/
 ENV/
 venv.bak/
 .venv/
+
+packages/
+dist/
+instance/
