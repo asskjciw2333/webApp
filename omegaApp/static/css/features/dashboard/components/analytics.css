@@ -1,0 +1,197 @@
+/* Analytics View */
+.analytics-view {
+    composes: flex-container custom-scrollbar;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* View Controls */
+.view-controls {
+    composes: flex-row;
+    gap: var(--spacing-sm);
+}
+
+.view-controls button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--background-color-secondary);
+    color: var(--text-color-secondary);
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.view-controls button.active {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.view-controls button:hover:not(.active) {
+    background: var(--background-color);
+    color: var(--text-color-primary);
+}
+
+/* Select Controls */
+.analysis-select,
+.location-select {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: var(--background-color-primary);
+    color: var(--text-color-primary);
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.analysis-select:focus,
+.location-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Analytics Container */
+.analytics-container {
+    composes: flex-container;
+    gap: var(--spacing-md);
+}
+
+/* Summary Cards */
+.summary-cards {
+    composes: grid-4-cols;
+    padding: var(--spacing-md);
+    background: var(--background-light);
+    border-radius: var(--radius-lg);
+}
+
+.summary-card {
+    composes: card;
+    text-align: center;
+}
+
+.summary-card h3 {
+    margin: 0 0 var(--spacing-sm) 0;
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.summary-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: var(--transition-normal);
+}
+
+/* Charts Grid */
+.charts-grid {
+    composes: grid-2-cols;
+    padding: var(--spacing-md);
+    background: var(--background-light);
+    border-radius: var(--radius-lg);
+}
+
+/* Loading Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.summary-value.updating {
+    animation: pulse 0.5s ease;
+}
+
+/* Chart Summaries */
+.storage-summary,
+.cpu-summary,
+.temp-summary {
+    composes: flex-row;
+    gap: var(--spacing-sm);
+    margin-right: var(--spacing-md);
+    overflow-x: auto;
+    padding-bottom: var(--spacing-xs);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.storage-summary::-webkit-scrollbar,
+.cpu-summary::-webkit-scrollbar,
+.temp-summary::-webkit-scrollbar {
+    display: none;
+}
+
+.summary-item {
+    flex: 0 0 auto;
+    min-width: 160px;
+    max-width: 200px;
+    padding: var(--spacing-xs) var(--spacing-md);
+    white-space: nowrap;
+}
+
+/* Network Charts */
+.network-charts {
+    composes: flex-container;
+    gap: var(--spacing-md);
+}
+
+.network-chart {
+    composes: flex-1;
+    position: relative;
+    min-height: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .storage-summary,
+    .cpu-summary,
+    .temp-summary {
+        margin-right: 0;
+        padding-bottom: var(--spacing-xs);
+    }
+
+    .summary-item {
+        min-width: 140px;
+    }
+
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .summary-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Modal Chart Styles */
+.modal-body canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Scrollbar styling */
+.analytics-view::-webkit-scrollbar {
+    width: 8px;
+}
+
+.analytics-view::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: var(--radius-md);
+}
+
+.analytics-view::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--scrollbar-track);
+}
+
+.analytics-view::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+}

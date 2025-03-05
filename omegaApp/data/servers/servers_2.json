@@ -1,0 +1,702 @@
+{
+  "10.0.2.200": {
+    "serial": "DEF456LMN20",
+    "Vendor": "Dell",
+    "Network": "10.0.2.200",
+    "ILO_IP": "10.0.2.201",
+    "ILOFIRMWARE": "3.60",
+    "HostName": "srv-env-2-01",
+    "Model": "PowerEdge R740",
+    "BiosFirmware": "B10 v3.52",
+    "DescoveryTime": "2024-03-19T10:30:00Z",
+    "TotalSystemMemoryGiB": 512,
+    "Processors": {
+      "CPUCount": 4,
+      "CorePerCPU": 16
+    },
+    "Storage": {
+      "Disks": {
+        "Controller X": [
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "0",
+            "CapacityGB": 1920
+          },
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "1",
+            "CapacityGB": 1920
+          }
+        ]
+      },
+      "PCIe": {
+        "Ethernet 10Gb X710": [
+          {
+            "Name": "Ethernet 10Gb X710 Adapter",
+            "class": "Network Controller",
+            "Vendor": "Intel"
+          }
+        ]
+      }
+    },
+    "InternalDevices": [
+      {
+        "Name": "Ethernet 10Gb X710 Adapter",
+        "class": "Network Controller",
+        "Vendor": "Intel"
+      },
+      {
+        "Name": "Controller X",
+        "class": "Storage Controller",
+        "Vendor": "Dell"
+      }
+    ],
+    "Location": {
+      "DataCenter": "DC-2-TLV",
+      "Room": "Lab Room C",
+      "Row": "R10",
+      "Rack": "10",
+      "U": "5"
+    },
+    "Power": {
+      "Max": 600,
+      "Avg": 500,
+      "Min": 400
+    },
+    "Temperature": {
+      "Max": 40,
+      "Avg": 30,
+      "Min": 25
+    }
+  },
+  "10.0.2.201": {
+    "serial": "DEF456LMN21",
+    "Vendor": "Dell",
+    "Network": "10.0.2.201",
+    "ILO_IP": "10.0.2.202",
+    "ILOFIRMWARE": "3.61",
+    "HostName": "srv-env-2-02",
+    "Model": "PowerEdge R740",
+    "BiosFirmware": "B10 v3.53",
+    "DescoveryTime": "2024-03-19T11:30:00Z",
+    "TotalSystemMemoryGiB": 512,
+    "Processors": {
+      "CPUCount": 4,
+      "CorePerCPU": 16
+    },
+    "Storage": {
+      "Disks": {
+        "Controller X": [
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "0",
+            "CapacityGB": 1920
+          },
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "1",
+            "CapacityGB": 1920
+          }
+        ]
+      },
+      "PCIe": {
+        "Ethernet 10Gb X710": [
+          {
+            "Name": "Ethernet 10Gb X710 Adapter",
+            "class": "Network Controller",
+            "Vendor": "Intel"
+          }
+        ]
+      }
+    },
+    "InternalDevices": [
+      {
+        "Name": "Ethernet 10Gb X710 Adapter",
+        "class": "Network Controller",
+        "Vendor": "Intel"
+      },
+      {
+        "Name": "Controller X",
+        "class": "Storage Controller",
+        "Vendor": "Dell"
+      }
+    ],
+    "Location": {
+      "DataCenter": "DC-2-TLV",
+      "Room": "Lab Room C",
+      "Row": "R11",
+      "Rack": "12",
+      "U": "6"
+    },
+    "Power": {
+      "Max": 610,
+      "Avg": 510,
+      "Min": 410
+    },
+    "Temperature": {
+      "Max": 41,
+      "Avg": 31,
+      "Min": 26
+    }
+  },
+  "10.0.2.202": {
+    "serial": "DEF456LMN22",
+    "Vendor": "Dell",
+    "Network": "10.0.2.202",
+    "ILO_IP": "10.0.2.203",
+    "ILOFIRMWARE": "3.62",
+    "HostName": "srv-env-2-03",
+    "Model": "PowerEdge R740",
+    "BiosFirmware": "B10 v3.54",
+    "DescoveryTime": "2024-03-19T12:30:00Z",
+    "TotalSystemMemoryGiB": 512,
+    "Processors": {
+      "CPUCount": 4,
+      "CorePerCPU": 16
+    },
+    "Storage": {
+      "Disks": {
+        "Controller X": [
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "0",
+            "CapacityGB": 1920
+          },
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "1",
+            "CapacityGB": 1920
+          }
+        ]
+      },
+      "PCIe": {
+        "Ethernet 10Gb X710": [
+          {
+            "Name": "Ethernet 10Gb X710 Adapter",
+            "class": "Network Controller",
+            "Vendor": "Intel"
+          }
+        ]
+      }
+    },
+    "InternalDevices": [
+      {
+        "Name": "Ethernet 10Gb X710 Adapter",
+        "class": "Network Controller",
+        "Vendor": "Intel"
+      },
+      {
+        "Name": "Controller X",
+        "class": "Storage Controller",
+        "Vendor": "Dell"
+      }
+    ],
+    "Location": {
+      "DataCenter": "DC-2-TLV",
+      "Room": "Lab Room C",
+      "Row": "R12",
+      "Rack": "14",
+      "U": "7"
+    },
+    "Power": {
+      "Max": 620,
+      "Avg": 520,
+      "Min": 420
+    },
+    "Temperature": {
+      "Max": 42,
+      "Avg": 32,
+      "Min": 27
+    }
+  },
+  "10.0.2.203": {
+    "serial": "DEF456LMN23",
+    "Vendor": "Dell",
+    "Network": "10.0.2.203",
+    "ILO_IP": "10.0.2.204",
+    "ILOFIRMWARE": "3.63",
+    "HostName": "srv-env-2-04",
+    "Model": "PowerEdge R740",
+    "BiosFirmware": "B10 v3.55",
+    "DescoveryTime": "2024-03-19T13:30:00Z",
+    "TotalSystemMemoryGiB": 512,
+    "Processors": {
+      "CPUCount": 4,
+      "CorePerCPU": 16
+    },
+    "Storage": {
+      "Disks": {
+        "Controller X": [
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "0",
+            "CapacityGB": 1920
+          },
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "1",
+            "CapacityGB": 1920
+          }
+        ]
+      },
+      "PCIe": {
+        "Ethernet 10Gb X710": [
+          {
+            "Name": "Ethernet 10Gb X710 Adapter",
+            "class": "Network Controller",
+            "Vendor": "Intel"
+          }
+        ]
+      }
+    },
+    "InternalDevices": [
+      {
+        "Name": "Ethernet 10Gb X710 Adapter",
+        "class": "Network Controller",
+        "Vendor": "Intel"
+      },
+      {
+        "Name": "Controller X",
+        "class": "Storage Controller",
+        "Vendor": "Dell"
+      }
+    ],
+    "Location": {
+      "DataCenter": "DC-2-TLV",
+      "Room": "Lab Room C",
+      "Row": "R13",
+      "Rack": "16",
+      "U": "8"
+    },
+    "Power": {
+      "Max": 630,
+      "Avg": 530,
+      "Min": 430
+    },
+    "Temperature": {
+      "Max": 43,
+      "Avg": 33,
+      "Min": 28
+    }
+  },
+  "10.0.2.204": {
+    "serial": "DEF456LMN24",
+    "Vendor": "Dell",
+    "Network": "10.0.2.204",
+    "ILO_IP": "10.0.2.205",
+    "ILOFIRMWARE": "3.64",
+    "HostName": "srv-env-2-05",
+    "Model": "PowerEdge R740",
+    "BiosFirmware": "B10 v3.56",
+    "DescoveryTime": "2024-03-19T14:30:00Z",
+    "TotalSystemMemoryGiB": 512,
+    "Processors": {
+      "CPUCount": 4,
+      "CorePerCPU": 16
+    },
+    "Storage": {
+      "Disks": {
+        "Controller X": [
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "0",
+            "CapacityGB": 1920
+          },
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "1",
+            "CapacityGB": 1920
+          }
+        ]
+      },
+      "PCIe": {
+        "Ethernet 10Gb X710": [
+          {
+            "Name": "Ethernet 10Gb X710 Adapter",
+            "class": "Network Controller",
+            "Vendor": "Intel"
+          }
+        ]
+      }
+    },
+    "InternalDevices": [
+      {
+        "Name": "Ethernet 10Gb X710 Adapter",
+        "class": "Network Controller",
+        "Vendor": "Intel"
+      },
+      {
+        "Name": "Controller X",
+        "class": "Storage Controller",
+        "Vendor": "Dell"
+      }
+    ],
+    "Location": {
+      "DataCenter": "DC-2-TLV",
+      "Room": "Lab Room C",
+      "Row": "R14",
+      "Rack": "18",
+      "U": "9"
+    },
+    "Power": {
+      "Max": 640,
+      "Avg": 540,
+      "Min": 440
+    },
+    "Temperature": {
+      "Max": 44,
+      "Avg": 34,
+      "Min": 29
+    }
+  },
+  "10.0.2.205": {
+    "serial": "DEF456LMN25",
+    "Vendor": "Dell",
+    "Network": "10.0.2.205",
+    "ILO_IP": "10.0.2.206",
+    "ILOFIRMWARE": "3.65",
+    "HostName": "srv-env-2-06",
+    "Model": "PowerEdge R740",
+    "BiosFirmware": "B10 v3.57",
+    "DescoveryTime": "2024-03-19T15:30:00Z",
+    "TotalSystemMemoryGiB": 512,
+    "Processors": {
+      "CPUCount": 4,
+      "CorePerCPU": 16
+    },
+    "Storage": {
+      "Disks": {
+        "Controller X": [
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "0",
+            "CapacityGB": 1920
+          },
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "1",
+            "CapacityGB": 1920
+          }
+        ]
+      },
+      "PCIe": {
+        "Ethernet 10Gb X710": [
+          {
+            "Name": "Ethernet 10Gb X710 Adapter",
+            "class": "Network Controller",
+            "Vendor": "Intel"
+          }
+        ]
+      }
+    },
+    "InternalDevices": [
+      {
+        "Name": "Ethernet 10Gb X710 Adapter",
+        "class": "Network Controller",
+        "Vendor": "Intel"
+      },
+      {
+        "Name": "Controller X",
+        "class": "Storage Controller",
+        "Vendor": "Dell"
+      }
+    ],
+    "Location": {
+      "DataCenter": "DC-2-TLV",
+      "Room": "Lab Room C",
+      "Row": "R15",
+      "Rack": "20",
+      "U": "10"
+    },
+    "Power": {
+      "Max": 650,
+      "Avg": 550,
+      "Min": 450
+    },
+    "Temperature": {
+      "Max": 45,
+      "Avg": 35,
+      "Min": 30
+    }
+  },
+  "10.0.2.206": {
+    "serial": "DEF456LMN26",
+    "Vendor": "Dell",
+    "Network": "10.0.2.206",
+    "ILO_IP": "10.0.2.207",
+    "ILOFIRMWARE": "3.66",
+    "HostName": "srv-env-2-07",
+    "Model": "PowerEdge R740",
+    "BiosFirmware": "B10 v3.58",
+    "DescoveryTime": "2024-03-19T16:30:00Z",
+    "TotalSystemMemoryGiB": 512,
+    "Processors": {
+      "CPUCount": 4,
+      "CorePerCPU": 16
+    },
+    "Storage": {
+      "Disks": {
+        "Controller X": [
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "0",
+            "CapacityGB": 1920
+          },
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "1",
+            "CapacityGB": 1920
+          }
+        ]
+      },
+      "PCIe": {
+        "Ethernet 10Gb X710": [
+          {
+            "Name": "Ethernet 10Gb X710 Adapter",
+            "class": "Network Controller",
+            "Vendor": "Intel"
+          }
+        ]
+      }
+    },
+    "InternalDevices": [
+      {
+        "Name": "Ethernet 10Gb X710 Adapter",
+        "class": "Network Controller",
+        "Vendor": "Intel"
+      },
+      {
+        "Name": "Controller X",
+        "class": "Storage Controller",
+        "Vendor": "Dell"
+      }
+    ],
+    "Location": {
+      "DataCenter": "DC-2-TLV",
+      "Room": "Lab Room C",
+      "Row": "R16",
+      "Rack": "22",
+      "U": "11"
+    },
+    "Power": {
+      "Max": 660,
+      "Avg": 560,
+      "Min": 460
+    },
+    "Temperature": {
+      "Max": 46,
+      "Avg": 36,
+      "Min": 31
+    }
+  },
+  "10.0.2.207": {
+    "serial": "DEF456LMN27",
+    "Vendor": "Dell",
+    "Network": "10.0.2.207",
+    "ILO_IP": "10.0.2.208",
+    "ILOFIRMWARE": "3.67",
+    "HostName": "srv-env-2-08",
+    "Model": "PowerEdge R740",
+    "BiosFirmware": "B10 v3.59",
+    "DescoveryTime": "2024-03-19T17:30:00Z",
+    "TotalSystemMemoryGiB": 512,
+    "Processors": {
+      "CPUCount": 4,
+      "CorePerCPU": 16
+    },
+    "Storage": {
+      "Disks": {
+        "Controller X": [
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "0",
+            "CapacityGB": 1920
+          },
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "1",
+            "CapacityGB": 1920
+          }
+        ]
+      },
+      "PCIe": {
+        "Ethernet 10Gb X710": [
+          {
+            "Name": "Ethernet 10Gb X710 Adapter",
+            "class": "Network Controller",
+            "Vendor": "Intel"
+          }
+        ]
+      }
+    },
+    "InternalDevices": [
+      {
+        "Name": "Ethernet 10Gb X710 Adapter",
+        "class": "Network Controller",
+        "Vendor": "Intel"
+      },
+      {
+        "Name": "Controller X",
+        "class": "Storage Controller",
+        "Vendor": "Dell"
+      }
+    ],
+    "Location": {
+      "DataCenter": "DC-2-TLV",
+      "Room": "Lab Room C",
+      "Row": "R17",
+      "Rack": "24",
+      "U": "12"
+    },
+    "Power": {
+      "Max": 670,
+      "Avg": 570,
+      "Min": 470
+    },
+    "Temperature": {
+      "Max": 47,
+      "Avg": 37,
+      "Min": 32
+    }
+  },
+  "10.0.2.208": {
+    "serial": "DEF456LMN28",
+    "Vendor": "Dell",
+    "Network": "10.0.2.208",
+    "ILO_IP": "10.0.2.209",
+    "ILOFIRMWARE": "3.68",
+    "HostName": "srv-env-2-09",
+    "Model": "PowerEdge R740",
+    "BiosFirmware": "B10 v3.60",
+    "DescoveryTime": "2024-03-19T18:30:00Z",
+    "TotalSystemMemoryGiB": 512,
+    "Processors": {
+      "CPUCount": 4,
+      "CorePerCPU": 16
+    },
+    "Storage": {
+      "Disks": {
+        "Controller X": [
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "0",
+            "CapacityGB": 1920
+          },
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "1",
+            "CapacityGB": 1920
+          }
+        ]
+      },
+      "PCIe": {
+        "Ethernet 10Gb X710": [
+          {
+            "Name": "Ethernet 10Gb X710 Adapter",
+            "class": "Network Controller",
+            "Vendor": "Intel"
+          }
+        ]
+      }
+    },
+    "InternalDevices": [
+      {
+        "Name": "Ethernet 10Gb X710 Adapter",
+        "class": "Network Controller",
+        "Vendor": "Intel"
+      },
+      {
+        "Name": "Controller X",
+        "class": "Storage Controller",
+        "Vendor": "Dell"
+      }
+    ],
+    "Location": {
+      "DataCenter": "DC-2-TLV",
+      "Room": "Lab Room C",
+      "Row": "R18",
+      "Rack": "26",
+      "U": "13"
+    },
+    "Power": {
+      "Max": 680,
+      "Avg": 580,
+      "Min": 480
+    },
+    "Temperature": {
+      "Max": 48,
+      "Avg": 38,
+      "Min": 33
+    }
+  },
+  "10.0.2.209": {
+    "serial": "DEF456LMN29",
+    "Vendor": "Dell",
+    "Network": "10.0.2.209",
+    "ILO_IP": "10.0.2.210",
+    "ILOFIRMWARE": "3.69",
+    "HostName": "srv-env-2-10",
+    "Model": "PowerEdge R740",
+    "BiosFirmware": "B10 v3.61",
+    "DescoveryTime": "2024-03-19T19:30:00Z",
+    "TotalSystemMemoryGiB": 512,
+    "Processors": {
+      "CPUCount": 4,
+      "CorePerCPU": 16
+    },
+    "Storage": {
+      "Disks": {
+        "Controller X": [
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "0",
+            "CapacityGB": 1920
+          },
+          {
+            "Model": "NVMe SSD 1.92TB",
+            "Id": "1",
+            "CapacityGB": 1920
+          }
+        ]
+      },
+      "PCIe": {
+        "Ethernet 10Gb X710": [
+          {
+            "Name": "Ethernet 10Gb X710 Adapter",
+            "class": "Network Controller",
+            "Vendor": "Intel"
+          }
+        ]
+      }
+    },
+    "InternalDevices": [
+      {
+        "Name": "Ethernet 10Gb X710 Adapter",
+        "class": "Network Controller",
+        "Vendor": "Intel"
+      },
+      {
+        "Name": "Controller X",
+        "class": "Storage Controller",
+        "Vendor": "Dell"
+      }
+    ],
+    "Location": {
+      "DataCenter": "DC-2-TLV",
+      "Room": "Lab Room C",
+      "Row": "R19",
+      "Rack": "28",
+      "U": "14"
+    },
+    "Power": {
+      "Max": 690,
+      "Avg": 590,
+      "Min": 490
+    },
+    "Temperature": {
+      "Max": 49,
+      "Avg": 39,
+      "Min": 34
+    }
+  }
+}

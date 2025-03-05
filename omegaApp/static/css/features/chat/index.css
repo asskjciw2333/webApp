@@ -1,0 +1,84 @@
+/* Base chat interface styles */
+@import './components/chat-button.css';
+@import './components/chat-window.css';
+@import './components/chat-header.css';
+@import './components/chat-messages.css';
+@import './components/chat-message.css';
+@import './components/chat-input.css';
+@import './components/history-menu.css';
+@import './components/thinking-indicator.css';
+@import './components/server-result.css';
+
+/* CSS Variables and base styles */
+:root {
+    /* Colors */
+    --primary-color: #2c7873;
+    --primary-color-hover: #1f5f5b;
+    --background-color: #ffffff;
+    --background-color-primary: #ffffff;
+    --background-color-secondary: #f8f9fa;
+    --text-color-primary: #1a1a1a;
+    --text-color-secondary: #666666;
+    --border-color: #e5e7eb;
+    
+    /* Gradients */
+    --header-gradient: linear-gradient(135deg, #2c7873 0%, #1f5f5b 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    
+    /* Transitions */
+    --transition-base: all 0.2s ease;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Scrollbar */
+    --scrollbar-track: #f1f1f1;
+    --scrollbar-thumb: #c1c1c1;
+    --scrollbar-thumb-hover: #a8a8a8;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #1a1a1a;
+        --background-color-primary: #242424;
+        --background-color-secondary: #2a2a2a;
+        --text-color-primary: #ffffff;
+        --text-color-secondary: #a0a0a0;
+        --border-color: #404040;
+        --scrollbar-track: #2a2a2a;
+        --scrollbar-thumb: #404040;
+        --scrollbar-thumb-hover: #4a4a4a;
+    }
+}
+
+/* Global styles for chat interface */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chat-messages::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.chat-messages {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+} 

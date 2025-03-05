@@ -1,0 +1,247 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="text-align: center; align-self: start;">
+
+    <h1>ממשק להצגת הפאנלים באולמות</h1>
+    <h4 style="color: rgba(0,0,0,50%);">לצורך מיפוי וחיפוש יעילים</h4>
+
+    <form id="filter-form" method="GET">
+        <div>
+
+            <select name="room" id="room-select">
+                <option value="">כל האולמות</option>
+            </select>
+            <select name="rack" id="rack-select">
+                <option value="">כל המסדים</option>
+            </select>
+        </div>
+        <div>
+
+            <input type="text" name="search" id="filter-input" placeholder="חיפוש ארון, אולם או שם">
+            <button type="submit" id="filter-button">סנן</button>
+        </div>
+        <div class="button-group">
+            <button type="button" class="route-search-btn btn btn-secondary" aria-label="חפש מסלול">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+                <span>חפש מסלול</span>
+                <span class="beta-tag">BETA</span>
+            </button>
+            <button type="button" class="ports-status-btn btn btn-secondary" aria-label="סטטוס פורטים">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                    <path d="M12 11v6M9 14h6"/>
+                </svg>
+                <span>סטטיסטיקה</span>
+                <span class="temp-tag">חדש!</span>
+            </button>
+            <button class="download-btn" type="button" aria-label="הורד CSV">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+            </button>
+        </div>
+    </form>
+    <div id="loading-spinner" class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <div id="spinner"></div>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>DCIM id</th>
+                    <th>אולם</th>
+                    <th>שם</th>
+                    <th>מסד</th>
+                    <th>U</th>
+                    <th>ממשק</th>
+                    <th>גודל (ב U)</th>
+                    <th>יעד</th>
+                    <th>פעיל?</th>
+                    <th>פורטים שנשארו</th>
+                    <th>סיווג</th>
+                    <th>תאריך יצירה</th>
+                    <th>תאריך עדכון</th>
+                </tr>
+            </thead>
+            <tbody id="panels-table">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">עדכון פרטי פאנל</h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="edit-form-col">
+                        <div class="form-group">
+                            <label class="form-label">שם</label>
+                            <input type="text" class="form-control-text" id="edit-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-destination">יעד<span class="lable-note">הפרד עם רווח</span></label>
+                            <input type="text" class="form-control-text" id="edit-destination"
+                                placeholder="XX-YY, AA-BB">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-how_many_ports_remain">פורטים שנשארו<span class="lable-note">מתעדכן בהוספת
+                                    יעד</span></label>
+                            <textarea type="text" class="form-control-text" id="edit-how_many_ports_remain"
+                                placeholder="XX-YY: ??,"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-interface">ממשק</label>
+                            <div id="interfac-radio-container">
+                                <div class="interfac-radio-sub-container">
+
+                                    <div class="interface-radio">
+                                        <input type="radio" name="radio-interface" class="form-control-radio"
+                                            id="edit-interface-MM-LC" value="MM-LC" />
+                                        <label for="MM-LC">MM-LC</label>
+                                    </div>
+                                    <div class="interface-radio">
+                                        <input type="radio" name="radio-interface" class="form-control-radio"
+                                            id="edit-interface-SM-LC" value="SM-LC" />
+                                        <label for="SM-LC">SM-LC</label>
+                                    </div>
+                                </div>
+                                <div class="interfac-radio-sub-container">
+
+                                    <div class="interface-radio">
+                                        <input type="radio" name="radio-interface" class="form-control-radio"
+                                            id="edit-interface-MM-SC" value="MM-SC" />
+                                        <label for="MM-SC">MM-SC</label>
+                                    </div>
+                                    <div class="interface-radio">
+                                        <input type="radio" name="radio-interface" class="form-control-radio"
+                                            id="edit-interface-SM-SC" value="SM-SC" />
+                                        <label for="SM-SC">SM-SC</label>
+                                    </div>
+                                </div>
+                                <div class="interfac-radio-sub-container">
+
+                                    <div class="interface-radio">
+                                        <input type="radio" name="radio-interface" class="form-control-radio"
+                                            id="edit-interface-RJ" value="RJ" />
+                                        <label for="RJ">RJ</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-classification">סיווג</label>
+                            <div class="classification-checkboxes">
+                                <label for="edit-classification-red" class="checkbox-container"
+                                    id="checkbox-container-red">
+                                    <input type="checkbox" id="edit-classification-red" value="red">
+                                </label>
+                                <label for="edit-classification-black" class="checkbox-container"
+                                    id="checkbox-container-black">
+                                    <input type="checkbox" id="edit-classification-black" value="black">
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-switch">פעיל?</label>
+                            <div class="toggle">
+                                <input type="checkbox" class="form-control-checkbox" id="edit-status">
+                                <label for="edit-status">
+                                    <span class="track">
+                                        <span class="txt"></span>
+                                    </span>
+                                    <span class="thumb">|||</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="justify-content: space-between" class="edit-form-col">
+                        <div class="edit-form-col">
+
+                            <div class="form-group">
+                                <label for="edit-dcim-id">DCIM ID</label>
+                                <input type="text" class="form-control-text" id="edit-dcim-id" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-room">אולם</label>
+                                <input type="text" class="form-control-text" id="edit-room" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-rack">מסד</label>
+                                <input type="text" class="form-control-text" id="edit-rack" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-U">U</label>
+                                <input type="text" class="form-control-text" id="edit-U" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-size"> גודל (ב U)</label>
+                                <input type="text" class="form-control-text" id="edit-size" disabled>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>שמור שינויים</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="red-pull-panel-link">
+        <div id="pull-panel-link" style=" text-decoration: none; color: black">משיכת כל
+            הנתונים מהDCIM - לא ללחוץ!</a>
+        </div>
+
+    </div>
+
+    <div id="portsStatusModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">סטטיסטיקה ומצב פורטים</h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-tabs">
+                <button class="tab-button active" data-tab="ports-status">סטטוס פורטים</button>
+                <button class="tab-button" data-tab="statistics">סטטיסטיקה</button>
+            </div>
+            <div class="modal-body">
+                <div id="ports-status-tab" class="tab-content active">
+                    <div class="ports-status-legend">
+                        <div class="legend-item">
+                            <span class="legend-color critical"></span>
+                            <span>פחות מ-5 פורטים</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color warning"></span>
+                            <span>פחות מ-10 פורטים</span>
+                        </div>
+                    </div>
+                    <div class="ports-status-list">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                </div>
+                <div id="statistics-tab" class="tab-content">
+                    <!-- Statistics content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='js/panels/index.js') }}"></script>    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/panels.css') }}">    
+    {% endblock %}

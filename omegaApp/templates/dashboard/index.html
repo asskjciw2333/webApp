@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Server Dashboard{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/features/dashboard/server-dashboard.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/rack-view.css') }}">
+
+<div class="dashboard-container">
+    <div id="loading-indicator" style="display: none;">
+        <div class="spinner"></div>
+        <span>טוען נתונים...</span>
+    </div>
+    
+    <div id="error-message" class="error-message" style="display: none;"></div>
+    
+    <div id="serverDashboard"></div>
+</div>
+
+<script type="module">
+    import ServerDashboard from '{{ url_for("static", filename="js/features/dashboard/ServerDashboard.js") }}';
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        new ServerDashboard('serverDashboard');
+    });
+</script>
+{% endblock %} 

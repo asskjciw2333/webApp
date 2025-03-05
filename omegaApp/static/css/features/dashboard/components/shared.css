@@ -1,0 +1,305 @@
+/* Common Layout */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+/* Common Card Styles */
+.card {
+    background: var(--background-color-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
+    border: 1px solid var(--border-color);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+/* Common Header Styles */
+.section-header {
+    margin-bottom: 16px;
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+/* Common Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border: none;
+    background: transparent;
+    color: var(--text-primary);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.btn:hover {
+    background: var(--primary-hover);
+    color: var(--primary-color);
+}
+
+.btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* Common Icon Styles */
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    flex-shrink: 0;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon.sm svg {
+    width: 16px;
+    height: 16px;
+}
+
+.icon.lg svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Common Tooltip */
+.tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color: var(--white);
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    font-size: 11px;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-fast);
+    white-space: nowrap;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+/* Common Error Message */
+.error-message {
+    padding: 8px 12px;
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: var(--radius-sm);
+    color: #856404;
+    font-size: 12px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .card {
+        padding: 16px;
+    }
+    
+    .btn {
+        padding: 6px;
+    }
+}
+
+/* Shared Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: var(--radius-md);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--scrollbar-track);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+}
+
+/* Shared Card Styles */
+.card-base {
+    background: var(--background-color);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color);
+}
+
+/* Shared Error Message */
+.error-icon {
+    font-size: 1.5rem;
+}
+
+/* Shared Empty State */
+.empty-state {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl);
+    text-align: center;
+    background: var(--background-color-primary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    min-height: 400px;
+}
+
+.empty-state-icon {
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-color-secondary);
+}
+
+.empty-state h3 {
+    margin: 0;
+    color: var(--text-color-primary);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.empty-state p {
+    color: var(--text-color-secondary);
+    margin: var(--spacing-xs) 0;
+}
+
+.empty-state-path {
+    background: var(--background-color-secondary);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-sm);
+    font-family: monospace;
+    margin: var(--spacing-sm) 0;
+    color: var(--primary-color);
+}
+
+.empty-state-help {
+    text-align: right;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--background-color-secondary);
+    border-radius: var(--radius-md);
+    width: 100%;
+    max-width: 500px;
+}
+
+.empty-state-help p {
+    color: var(--text-color-primary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.empty-state-help ol {
+    text-align: right;
+    padding-right: var(--spacing-lg);
+}
+
+.empty-state-help li {
+    color: var(--text-color-secondary);
+    margin: var(--spacing-sm) 0;
+}
+
+/* RTL Support for Shared Components */
+[dir="rtl"] .empty-state-help {
+    text-align: right;
+}
+
+/* Common Grid Layouts */
+.grid-responsive {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Common Chart Styles */
+.chart-base {
+    position: relative;
+    min-height: 350px;
+    padding: var(--spacing-md);
+    background: var(--background-color-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
+}
+
+.chart-base:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.chart-header-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Common Loading States */
+.loading-skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--background-color-secondary) 0%,
+        var(--background-color) 50%,
+        var(--background-color-secondary) 100%
+    );
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}

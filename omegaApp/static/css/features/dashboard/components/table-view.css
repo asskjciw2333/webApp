@@ -1,0 +1,352 @@
+/* Dashboard Table View */
+.table-view {
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+/* Custom Cell Styles */
+.specs-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 100%;
+    justify-content: center;
+}
+
+.specs-primary {
+    color: var(--text-color-primary);
+    font-weight: 500;
+}
+
+.specs-secondary {
+    color: var(--text-color-secondary);
+    font-size: 0.85rem;
+}
+
+.power-cell {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    white-space: nowrap;
+    height: 100%;
+}
+
+.power-value {
+    font-weight: 500;
+    color: var(--text-color-primary);
+}
+
+.power-range {
+    font-size: 0.85rem;
+    color: var(--text-color-secondary);
+    padding: 2px 6px;
+    background: var(--background-color-secondary);
+    border-radius: var(--radius-sm);
+}
+
+/* RTL Support */
+[dir="rtl"] .power-cell {
+    flex-direction: row-reverse;
+}
+
+/* DCIM Status Styles */
+.dcim-section {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: var(--background-secondary);
+}
+
+.dcim-section h3 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.dcim-loading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.dcim-found {
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.dcim-found.matches {
+    background-color: var(--background-success);
+}
+
+.dcim-found.has-differences {
+    background-color: var(--background-warning);
+}
+
+.dcim-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+/* Differences Table */
+.differences-table {
+    width: 100%;
+    margin: 1rem 0;
+    border-collapse: collapse;
+    background-color: var(--background-primary);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.differences-table th,
+.differences-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.differences-table th {
+    background-color: var(--background-secondary);
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.differences-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* DCIM Actions */
+.dcim-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.update-dcim-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.update-dcim-btn:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.update-dcim-btn:disabled {
+    background-color: var(--disabled-color);
+    cursor: not-allowed;
+}
+
+/* Floating Action Button */
+.floating-action-button {
+    position: fixed;
+    bottom: var(--spacing-md);
+    justify-self: anchor-center;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--primary-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    color: white;
+    z-index: 9999;
+    transition: all 0.3s var(--transition-smooth);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating-action-button.hidden {
+    transform: translateY(calc(100% + var(--spacing-xl)));
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.floating-action-button .selected-count {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+}
+
+.floating-action-button .btn-update {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.floating-action-button .btn-update:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-sm);
+}
+
+.floating-action-button .btn-update svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.floating-action-button:hover .btn-update svg {
+    transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .table-view {
+        padding: var(--spacing-md);
+    }
+    
+    .specs-secondary {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-view {
+        padding: var(--spacing-sm);
+    }
+    .floating-action-button {
+        bottom: var(--spacing-md);
+        left: var(--spacing-md);
+        right: var(--spacing-md);
+        justify-content: center;
+    }
+}
+
+/* Add to existing table-view.css */
+
+.floating-action-buttons {
+    position: fixed;
+    bottom: var(--spacing-xl);
+    right: var(--spacing-xl);
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s var(--transition-smooth);
+}
+
+.floating-action-buttons.single-button {
+    gap: 0;
+}
+
+.btn-refresh-dcim {
+    background-color: var(--secondary-color);
+    color: var(--background-color-primary);
+    border: none;
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+}
+
+.btn-refresh-dcim:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-refresh-dcim svg {
+    width: 16px;
+    height: 16px;
+}
+
+.floating-action-button {
+    background-color: var(--primary-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+}
+
+.floating-action-button:hover {
+    background-color: var(--primary-color-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-lg);
+}
+
+.floating-action-button.hidden {
+    display: none;
+}
+
+.floating-action-button .selected-count {
+    color: var(--background-color-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+}
+
+.floating-action-button .btn-update {
+    background: none;
+    border: none;
+    color: var(--background-color-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+}
+
+.floating-action-button .btn-update svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Loading state styles */
+.floating-action-buttons button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Animation for buttons */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(var(--spacing-md));
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .floating-action-buttons {
+        bottom: var(--spacing-md);
+        right: var(--spacing-md);
+        flex-direction: column;
+        align-items: flex-end;
+    }
+} 

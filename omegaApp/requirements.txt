@@ -1,0 +1,25 @@
+flask
+flask[async]
+flask-cors
+
+python-dotenv
+urllib3 == 1.26.6
+requests
+websockets
+watchdog
+ucscsdk
+ucsmsdk
+
+networkx
+jira
+
+# tests:
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
+
+# server:
+waitress
+
+aiohttp

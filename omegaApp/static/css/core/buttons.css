@@ -1,0 +1,51 @@
+/* Button Base Styles */
+.btn-base,
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    height: 36px;
+    padding: 0 var(--spacing-md);
+    border: none;
+    border-radius: var(--radius-sm);
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.btn-base:hover:not(:disabled),
+.btn:hover:not(:disabled) {
+    background-color: var(--primary-color-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-base:active:not(:disabled),
+.btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.btn-base:disabled,
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+
+.untracked-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid #e2e8f0;
+}
+
+.untracked-btn:hover {
+    color: var(--error-color);
+    border-color: var(--error-color);
+    background-color: transparent;
+    transform: none;
+    box-shadow: none;
+} 

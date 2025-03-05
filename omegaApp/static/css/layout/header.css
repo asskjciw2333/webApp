@@ -1,0 +1,72 @@
+header {
+    grid-area: header;
+    height: 64px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: var(--header-gradient);
+    padding: var(--spacing-md) var(--spacing-lg);
+    text-align: center;
+    border-bottom: solid 1px rgba(63, 128, 123, 0.7);
+    box-shadow: var(--shadow-md);
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+nav ul li {
+    margin-left: 0.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-sm);
+    transition: var(--transition-base);
+    text-align: center;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a.active {
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+nav ul li a.active::after {
+    width: 100%;
+    background-color: var(--secondary-color);
+} 

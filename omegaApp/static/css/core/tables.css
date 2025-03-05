@@ -1,0 +1,71 @@
+/* Table Base Styles */
+table {
+    width: 100%;
+    margin: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius-md);
+    background: white;
+}
+
+/* Add table wrapper styles */
+.table-wrapper {
+    max-height: 70vh;
+    overflow-y: auto;
+    margin: var(--spacing-lg) auto;
+    width: 95%;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    position: relative;
+}
+
+/* Keep header fixed */
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--primary-color);
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    padding: var(--spacing-md);
+    text-align: center;
+    font-size: 0.95rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* Only show shadow when table is scrollable */
+.table-wrapper.is-scrollable thead::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 8px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), transparent);
+}
+
+td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid #edf2f7;
+    text-align: center;
+    font-size: 0.9rem;
+    background: inherit;
+}
+
+tbody tr {
+    transition: all 0.2s ease;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #edf2f7;
+} 

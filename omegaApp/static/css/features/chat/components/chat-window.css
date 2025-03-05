@@ -1,0 +1,31 @@
+.chat-window {
+    position: fixed;
+    bottom: 80px;
+    right: 120px;
+    width: 350px;
+    height: 500px;
+    background: var(--background-color-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.95);
+    transition: var(--transition-smooth);
+    border: 1px solid var(--border-color);
+}
+
+.chat-window.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0s linear;
+}
+
+.chat-window.expanded {
+    width: 600px;
+    height: 80vh;
+    bottom: 20px;
+} 
