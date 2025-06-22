@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/core/variables.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/duty-roster.css') }}">
+
+{% block content %}
+<div id="duty-roster-container"></div>
+
+<script type="module">
+  import { DutyRosterUI } from "{{ url_for('static', filename='js/features/duty-roster/DutyRosterUI.js') }}";
+
+  // Initialize the duty roster when the DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    const ui = new DutyRosterUI('duty-roster-container');
+    // Store reference to UI instance globally for debugging
+    window.dutyRosterUI = ui;
+  });
+</script>
+
+
+</div>
+
+<script type="module" src="{{ url_for('static', filename='js/features/duty-roster/DutyRosterUI.js') }}"></script>
+<script type="module" src="{{ url_for('static', filename='js/duty-roster-init.js') }}"></script>
+</div>
+
+<script type="module" src="{{ url_for('static', filename='js/features/duty-roster/DutyRosterUI.js') }}"></script>
+<script type="module" src="{{ url_for('static', filename='js/duty-roster-init.js') }}"></script>
+{% endblock %}

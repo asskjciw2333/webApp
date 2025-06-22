@@ -37,6 +37,7 @@
 @import './features/panels/route-modal.css';
 @import './features/automation/text-check.css';
 @import './features/panels/ports-status.css';
+@import './duty-roster.css';
 
 /* Add to existing nav styles */
 nav .hidden-nav-item {

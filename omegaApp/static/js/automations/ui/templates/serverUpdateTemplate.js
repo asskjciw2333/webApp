@@ -1,6 +1,6 @@
 export function getServerUpdateFormHTML() {
     return `
-    <div> יש לשים לב שהשרת מוגדר כ <strong>global defualt</strong> בטמפליט. אחרת יבוצע שינמוך  אוטומאטי בסיום התהליך </div>
+    <div> יש לשים לב שהשרת מוגדר כ <strong>global defualt</strong> בטמפליט. אחרת יבוצע שינמוך  אוטומאטי בסיום התהליך. בנוסף יש לוודא תמיכה של ה<strong>FIים</strong> בגרסה. </div>
         <div class="server-update-form">
             <div class="form-group">
                 <div class="version-selector">

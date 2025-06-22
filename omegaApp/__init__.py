@@ -53,6 +53,7 @@ def create_app(test_config=None):
     logger.info("Initializing application")
 
     from . import db
+    from . import duty_roster
 
     db.init_app(app)
 
@@ -88,6 +89,8 @@ def create_app(test_config=None):
     from . import omega
 
     app.register_blueprint(omega.bp)
+
+    app.register_blueprint(duty_roster.bp)
 
     from .routes.server_dashboard import server_dashboard
     app.register_blueprint(server_dashboard)

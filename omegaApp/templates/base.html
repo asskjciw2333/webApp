@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/components/tutorial.css') }}">
     <link rel="stylesheet" href="/static/css/features/dashboard/charts/charts.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/features/chat/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/duty-roster.css') }}">
     <!-- Three.js and loaders -->
     <script async src="/static/js/lib/es-module-shims.js"></script>
     <script type="importmap">
@@ -62,6 +63,10 @@
                 <li>
                     <a href="{{ url_for('server_dashboard.index') }}" 
                         class="{{ 'active' if request.endpoint == 'server_dashboard.index' }}">דשבורד שרתים</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('duty_roster.index') }}" 
+                        class="{{ 'active' if request.endpoint == 'duty_roster.index' }}">ניהול תורנויות</a>
                 </li>
                 <li class="hidden-nav-item">
                     <a href="{{ url_for('log_viewer.view_logs') }}" 
