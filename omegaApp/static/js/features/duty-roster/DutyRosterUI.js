@@ -10,13 +10,13 @@ import { helpContent } from './help.js';
 // Main Duty Roster UI Module
 export class DutyRosterUI {
     static instance = null;
-    
+
     constructor(containerId) {
         if (DutyRosterUI.instance) {
             return DutyRosterUI.instance;
         }
         DutyRosterUI.instance = this;
-        
+
         this.container = document.getElementById(containerId);
         if (!this.container) {
             console.error(`Container with id ${containerId} not found`);
@@ -27,7 +27,7 @@ export class DutyRosterUI {
         this.modalContainer = document.createElement('div');
         this.modalContainer.id = 'modal-container';
         document.body.appendChild(this.modalContainer);
-        
+
         // Initialize managers and components
         this.stateManager = new RosterStateManager();
         this.dialogManager = new DialogManager(this.modalContainer);
@@ -38,17 +38,17 @@ export class DutyRosterUI {
 
         // Set up state management
         this.stateManager.subscribe('main-ui', (state) => this.handleStateUpdate(state));
-        
+
         this.initializeUI();
         this.setupEventListeners();
         this.loadData();
-        
+
         // Start periodic updates
         this.stateManager.startPeriodicUpdates();
     }
 
     async handleStateUpdate(state) {
-        switch(state.type) {
+        switch (state.type) {
             case 'members':
             case 'assignments':
             case 'constraints':
@@ -67,13 +67,17 @@ export class DutyRosterUI {
                         <button class="btn btn-secondary" id="help-btn" title="עזרה">!</button>
                     </div>
                     <div class="header-controls">
-                        <button class="btn btn-primary" id="autoScheduleBtn">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 14l-3-3m3 3l-3 3M3 10h12c2 0 3 1 3 3"/>
+                        <button class="btn btn-auto-schedule" id="autoScheduleBtn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                                <path d="M16 2v4M8 2v4"/>
+                                <path d="M3 10h18"/>
+                                <circle cx="17" cy="17" r="2"/>
+                                <path d="M17 15v2m0 2v2m2-2h-4"/>
                             </svg>
                             שיבוץ אוטומטי
                         </button>
-                        <button class="btn btn-success" id="exportOutlookBtn">
+                        <button class="btn btn-outlook" id="exportOutlookBtn">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                                 <polyline points="7,10 12,15 17,10"/>
@@ -82,8 +86,12 @@ export class DutyRosterUI {
                             ייצוא ל-Outlook
                         </button>
                         <button class="btn btn-danger" id="deleteAssignmentsBtn">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 6h18M8 6v12a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V6M19 6l-1-2a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2L5 6"/>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 6h18"/>
+                                <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                <rect x="5" y="6" width="14" height="14" rx="2"/>
+                                <line x1="10" y1="11" x2="10" y2="17"/>
+                                <line x1="14" y1="11" x2="14" y2="17"/>
                             </svg>
                             מחק שיבוצים
                         </button>
@@ -135,17 +143,17 @@ export class DutyRosterUI {
         document.getElementById('prevMonth').addEventListener('click', () => this.navigateMonth(-1));
         document.getElementById('nextMonth').addEventListener('click', () => this.navigateMonth(1));
         document.getElementById('todayBtn').addEventListener('click', () => this.jumpToToday());
-        
+
         // Add member button
-        document.getElementById('addMemberBtn').addEventListener('click', () => 
+        document.getElementById('addMemberBtn').addEventListener('click', () =>
             this.memberDialog.showAddMemberDialog());
 
         // Auto-schedule button
-        document.getElementById('autoScheduleBtn').addEventListener('click', () => 
+        document.getElementById('autoScheduleBtn').addEventListener('click', () =>
             this.showAutoScheduleDialog());
 
         // Export to Outlook button
-        document.getElementById('exportOutlookBtn').addEventListener('click', () => 
+        document.getElementById('exportOutlookBtn').addEventListener('click', () =>
             this.showExportOutlookDialog());
 
         // Delete assignments button
@@ -162,7 +170,7 @@ export class DutyRosterUI {
                 this.loadAssignments(),
                 this.stateManager.updateConstraints()
             ]);
-            
+
             this.renderUI();
         } catch (error) {
             console.error('Error loading duty roster data:', error);
@@ -174,21 +182,21 @@ export class DutyRosterUI {
         // Fix timezone issues by using UTC dates
         const year = this.stateManager.currentDate.getFullYear();
         const month = this.stateManager.currentDate.getMonth(); // 0-11
-        
+
         // Calculate the first day of the week that contains the first day of the month
         const firstDayOfMonth = new Date(year, month, 1);
         const firstDayOfWeek = firstDayOfMonth.getDay();
         const daysFromPrevMonth = firstDayOfWeek;
-        
+
         // Calculate the last day of the week that contains the last day of the month
         const lastDayOfMonth = new Date(year, month + 1, 0);
         const lastDayOfWeek = lastDayOfMonth.getDay();
         const daysToNextMonth = 6 - lastDayOfWeek;
-        
+
         // Create dates using UTC to avoid timezone issues
         const startDate = new Date(Date.UTC(year, month, 1 - daysFromPrevMonth));
         const endDate = new Date(Date.UTC(year, month + 1, daysToNextMonth));
-        
+
         await this.stateManager.updateAssignments(startDate, endDate);
     }
 
@@ -272,11 +280,11 @@ export class DutyRosterUI {
                 const data = await response.json();
                 if (!response.ok) throw new Error(data.error || 'שגיאה בשיבוץ אוטומטי');
                 NotificationManager.showNotification('השיבוץ האוטומטי הושלם בהצלחה', 'success');
-                
+
                 // Update currentDate to the month that was scheduled
                 const [year, month] = result.month.split('-').map(Number);
                 this.stateManager.currentDate = new Date(Date.UTC(year, month - 1, 1));
-                
+
                 await this.loadAssignments();
                 this.renderUI();
             } catch (error) {
@@ -359,17 +367,17 @@ export class DutyRosterUI {
         const currentMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
         const nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
         const nextMonthStr = `${nextMonth.getFullYear()}-${String(nextMonth.getMonth() + 1).padStart(2, '0')}`;
-        
+
         const content = `
             <div class="export-outlook-dialog">
                 <p>בחר שיטת ייצוא לתורנויות ל-Outlook:</p>
                 
                 <div class="export-tabs">
-                    <button class="tab-btn active" data-tab="date-range">טווח תאריכים</button>
-                    <button class="tab-btn" data-tab="month-range">טווח חודשים</button>
+                    <button class="tab-btn" data-tab="date-range">טווח תאריכים</button>
+                    <button class="tab-btn active" data-tab="month-range">טווח חודשים</button>
                 </div>
                 
-                <div class="tab-content active" id="date-range-tab">
+                <div class="tab-content" id="date-range-tab">
                     <div class="form-group">
                         <label for="startDateExport">תאריך התחלה:</label>
                         <input type="date" id="startDateExport" class="form-control" value="${now.toISOString().split('T')[0]}">
@@ -380,7 +388,7 @@ export class DutyRosterUI {
                     </div>
                 </div>
                 
-                <div class="tab-content" id="month-range-tab">
+                <div class="tab-content active" id="month-range-tab">
                     <div class="form-group">
                         <label for="monthSelectExport">חודש התחלה:</label>
                         <input type="month" id="monthSelectExport" class="form-control" value="${currentMonth}">
@@ -402,42 +410,42 @@ export class DutyRosterUI {
                     </ol>
                 </div>
                 <div class="modal-actions">
-                    <button class="btn btn-success" data-action="export">ייצא</button>
+                    <button class="btn btn-outlook" data-action="export">ייצא</button>
                     <button class="btn btn-secondary" data-action="cancel">ביטול</button>
                 </div>
             </div>
         `;
-        
+
         const result = await new Promise((resolve) => {
             this.dialogManager.showModal('ייצוא ל-Outlook', content);
             setTimeout(() => {
                 const modal = document.querySelector('.export-outlook-dialog');
                 if (!modal) return resolve(null);
-                
+
                 // Tab switching functionality
                 const tabBtns = modal.querySelectorAll('.tab-btn');
                 const tabContents = modal.querySelectorAll('.tab-content');
-                
+
                 tabBtns.forEach(btn => {
                     btn.addEventListener('click', () => {
                         const tabName = btn.dataset.tab;
-                        
+
                         // Update active tab button
                         tabBtns.forEach(b => b.classList.remove('active'));
                         btn.classList.add('active');
-                        
+
                         // Update active tab content
                         tabContents.forEach(content => content.classList.remove('active'));
                         modal.querySelector(`#${tabName}-tab`).classList.add('active');
                     });
                 });
-                
+
                 const exportBtn = modal.querySelector('[data-action="export"]');
                 const cancelBtn = modal.querySelector('[data-action="cancel"]');
-                
+
                 exportBtn?.addEventListener('click', () => {
                     const activeTab = modal.querySelector('.tab-btn.active').dataset.tab;
-                    
+
                     if (activeTab === 'date-range') {
                         const startDate = modal.querySelector('#startDateExport')?.value;
                         const endDate = modal.querySelector('#endDateExport')?.value;
@@ -447,23 +455,23 @@ export class DutyRosterUI {
                         const months = parseInt(modal.querySelector('#monthsCountExport')?.value);
                         resolve({ type: 'month-range', month, months });
                     }
-                    
+
                     document.body.querySelector('#modal-container').innerHTML = '';
                 });
-                
+
                 cancelBtn?.addEventListener('click', () => {
                     resolve(null);
                     document.body.querySelector('#modal-container').innerHTML = '';
                 });
             }, 0);
         });
-        
+
         if (result) {
             try {
                 NotificationManager.showNotification('מייצא תורנויות...', 'info');
-                
+
                 let url, filename;
-                
+
                 if (result.type === 'date-range' && result.startDate && result.endDate) {
                     url = `/duty-roster/api/export/outlook?start_date=${result.startDate}&end_date=${result.endDate}`;
                     filename = `duty_roster_${result.startDate}_to_${result.endDate}.ics`;
@@ -474,7 +482,7 @@ export class DutyRosterUI {
                     NotificationManager.showNotification('נא למלא את כל השדות בצורה תקינה', 'error');
                     return;
                 }
-                
+
                 // Create download link
                 const link = document.createElement('a');
                 link.href = url;
@@ -482,7 +490,7 @@ export class DutyRosterUI {
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
-                
+
                 NotificationManager.showNotification('הקובץ יוצא בהצלחה!', 'success');
             } catch (error) {
                 NotificationManager.showNotification(`שגיאה בייצוא הקובץ: ${error.message}`, 'error');

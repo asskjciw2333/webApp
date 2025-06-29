@@ -6,6 +6,7 @@
     --background-color: #f7f9fc;
     --text-color: #2d3436;
     --error-color: #e17055;
+    --error-color-hover: #c1573d;
     --success-color: #00b894;
     --warning-color: #ff9f43;
     --header-gradient: linear-gradient(135deg, #2c7873 0%, #004445 100%);

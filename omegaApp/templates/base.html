@@ -64,7 +64,7 @@
                     <a href="{{ url_for('server_dashboard.index') }}" 
                         class="{{ 'active' if request.endpoint == 'server_dashboard.index' }}">דשבורד שרתים</a>
                 </li>
-                <li>
+                <li class="hidden-nav-item">
                     <a href="{{ url_for('duty_roster.index') }}" 
                         class="{{ 'active' if request.endpoint == 'duty_roster.index' }}">ניהול תורנויות</a>
                 </li>

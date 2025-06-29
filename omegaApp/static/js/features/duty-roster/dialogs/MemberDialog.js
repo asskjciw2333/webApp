@@ -75,7 +75,7 @@ export class MemberDialog {
             `<p>האם אתה בטוח שברצונך למחוק את ${member.name}?</p>
              <div class="modal-actions">
                 <button class="btn-secondary" data-action="cancel">ביטול</button>
-                <button class="btn-danger" data-action="confirm">מחק</button>
+                <button class="btn-base btn-danger" data-action="confirm">מחק</button>
              </div>`
         );
 
