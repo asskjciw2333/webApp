@@ -1,9 +1,10 @@
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for, jsonify
+    Blueprint, flash, g, redirect, render_template, request, url_for, jsonify, Response
 )
 import sqlite3
 from datetime import datetime, timedelta
 from .db import get_db, DatabaseError
+from calendar import monthrange
 
 bp = Blueprint('duty_roster', __name__, url_prefix='/duty-roster')
 
@@ -52,12 +53,29 @@ def add_member():
 
 @bp.route('/api/members/<int:id>', methods=['DELETE'])
 def delete_member(id):
-    """Delete (deactivate) a team member"""
+    """Delete (deactivate) a team member and remove all their constraints and assignments"""
     try:
         db = get_db()
+        
+        # First check if member exists
+        member = db.execute('SELECT id FROM team_members WHERE id = ?', (id,)).fetchone()
+        if not member:
+            return jsonify({'error': 'Member not found'}), 404
+        
+        # Delete all constraints for this member
+        db.execute('DELETE FROM member_constraints WHERE member_id = ?', (id,))
+        
+        # Delete all duty assignments for this member
+        db.execute('DELETE FROM duty_assignments WHERE member_id = ?', (id,))
+        
+        # Delete workload history for this member
+        db.execute('DELETE FROM workload_history WHERE member_id = ?', (id,))
+        
+        # Finally, deactivate the member
         db.execute('UPDATE team_members SET status = "inactive" WHERE id = ?', (id,))
+        
         db.commit()
-        return jsonify({'message': 'Member deactivated successfully'}), 200
+        return jsonify({'message': 'Member deactivated and all associated data deleted successfully'}), 200
     except sqlite3.Error as e:
         return jsonify({'error': str(e)}), 500
 
@@ -98,14 +116,15 @@ def get_constraints():
                 '''SELECT c.*, m.name as member_name 
                    FROM member_constraints c 
                    JOIN team_members m ON c.member_id = m.id 
-                   WHERE c.member_id = ?''',
+                   WHERE c.member_id = ? AND m.status = "active"''',
                 (member_id,)
             ).fetchall()
         else:
             constraints = db.execute(
                 '''SELECT c.*, m.name as member_name 
                    FROM member_constraints c 
-                   JOIN team_members m ON c.member_id = m.id'''
+                   JOIN team_members m ON c.member_id = m.id 
+                   WHERE m.status = "active"'''
             ).fetchall()
         return jsonify([dict(constraint) for constraint in constraints])
     except sqlite3.Error as e:
@@ -126,6 +145,16 @@ def add_constraint():
 
     try:
         db = get_db()
+        
+        # Check if member exists and is active
+        member = db.execute(
+            'SELECT id FROM team_members WHERE id = ? AND status = "active"',
+            (data['member_id'],)
+        ).fetchone()
+        
+        if not member:
+            return jsonify({'error': 'Invalid or inactive member ID'}), 400
+        
         cursor = db.execute(
             '''INSERT INTO member_constraints 
                (member_id, constraint_type, day_of_week, specific_date, is_available, reason)
@@ -195,7 +224,7 @@ def get_assignments():
             '''SELECT a.*, m.name as member_name 
                FROM duty_assignments a 
                JOIN team_members m ON a.member_id = m.id 
-               WHERE a.date BETWEEN ? AND ?
+               WHERE a.date BETWEEN ? AND ? AND m.status = "active"
                ORDER BY a.date''',
             (start_date, end_date)
         ).fetchall()
@@ -259,6 +288,29 @@ def delete_assignment(date):
     except sqlite3.Error as e:
         return jsonify({'error': str(e)}), 500
 
+@bp.route('/api/assignments/delete-range', methods=['POST'])
+def delete_assignments_range():
+    """Delete all assignments in a given month range"""
+    data = request.get_json()
+    month = data.get('month')  # format: YYYY-MM
+    months = int(data.get('months', 1))
+    if not month or months < 1:
+        return jsonify({'error': 'month and months are required'}), 400
+    try:
+        db = get_db()
+        year, start_month = map(int, month.split('-'))
+        for i in range(months):
+            m = start_month + i
+            y = year + (m - 1) // 12
+            m = (m - 1) % 12 + 1
+            first_day = f"{y}-{str(m).zfill(2)}-01"
+            last_day = f"{y}-{str(m).zfill(2)}-{monthrange(y, m)[1]}"
+            db.execute('DELETE FROM duty_assignments WHERE date BETWEEN ? AND ?', (first_day, last_day))
+        db.commit()
+        return jsonify({'message': 'Assignments deleted successfully'}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 @bp.route('/api/roster', methods=['GET'])
 def get_roster():
     """Get the duty roster for a specific date range"""
@@ -275,7 +327,7 @@ def get_roster():
             '''SELECT r.*, m.name as member_name 
                FROM duty_assignments r 
                JOIN team_members m ON r.member_id = m.id 
-               WHERE date BETWEEN ? AND ?
+               WHERE date BETWEEN ? AND ? AND m.status = "active"
                ORDER BY date''',
             (start_date, end.strftime('%Y-%m-%d'))
         ).fetchall()
@@ -294,6 +346,16 @@ def assign_duty():
 
     try:
         db = get_db()
+        
+        # Check if member exists and is active
+        member = db.execute(
+            'SELECT id FROM team_members WHERE id = ? AND status = "active"',
+            (data['member_id'],)
+        ).fetchone()
+        
+        if not member:
+            return jsonify({'error': 'Invalid or inactive member ID'}), 400
+        
         # Check if date is already assigned
         existing = db.execute(
             'SELECT id FROM duty_assignments WHERE date = ?',
@@ -379,32 +441,36 @@ def update_workload_history(db, member_id, date_str):
 def get_positive_constraints(db, date_str):
     """Get members that must be assigned on a specific date"""
     return db.execute(
-        '''SELECT member_id 
-           FROM member_constraints 
-           WHERE (specific_date = ? OR 
-                 (constraint_type = 'fixed' AND day_of_week = strftime('%w', ?)))
-           AND is_available = 1''',
+        '''SELECT c.member_id 
+           FROM member_constraints c
+           JOIN team_members m ON c.member_id = m.id
+           WHERE (c.specific_date = ? OR 
+                 (c.constraint_type = 'fixed' AND c.day_of_week = strftime('%w', ?)))
+           AND c.is_available = 1
+           AND m.status = "active"''',
         (date_str, date_str)
     ).fetchall()
 
 def get_negative_constraints(db, date_str):
     """Get members that cannot be assigned on a specific date"""
     return db.execute(
-        '''SELECT member_id 
-           FROM member_constraints 
-           WHERE (specific_date = ? OR 
-                 (constraint_type = 'fixed' AND day_of_week = strftime('%w', ?)))
-           AND is_available = 0''',
+        '''SELECT c.member_id 
+           FROM member_constraints c
+           JOIN team_members m ON c.member_id = m.id
+           WHERE (c.specific_date = ? OR 
+                 (c.constraint_type = 'fixed' AND c.day_of_week = strftime('%w', ?)))
+           AND c.is_available = 0
+           AND m.status = "active"''',
         (date_str, date_str)
     ).fetchall()
 
-def auto_schedule_duties(db, start_date_str, days):
+def auto_schedule_duties(db, start_date_str, last_day_str):
     """
     Automatically schedule duties for a date range with improved workload balancing
     """
     try:
-        start_date = datetime.strptime(start_date_str, '%Y-%m-%d')
-        end_date = start_date + timedelta(days=days)
+        start_date = datetime.strptime(start_date_str, '%Y-%m-%d').date()
+        end_date = datetime.strptime(last_day_str, '%Y-%m-%d').date()
         schedule = {}
 
         # Get all active members
@@ -416,8 +482,12 @@ def auto_schedule_duties(db, start_date_str, days):
         if not member_ids:
             raise ValueError('No active team members found')
 
-        current_date = start_date
-        while current_date < end_date:
+        # Calculate number of days between start and end (inclusive)
+        delta = end_date - start_date
+        num_days = delta.days + 1
+
+        for i in range(num_days):
+            current_date = start_date + timedelta(days=i)
             date_str = current_date.strftime('%Y-%m-%d')
             
             # Skip if already assigned
@@ -443,7 +513,6 @@ def auto_schedule_duties(db, start_date_str, days):
                     
                     if not available_members:
                         schedule[date_str] = None  # No available members
-                        current_date += timedelta(days=1)
                         continue
                     
                     # Choose member with least workload
@@ -459,8 +528,6 @@ def auto_schedule_duties(db, start_date_str, days):
                 )
                 update_workload_history(db, chosen_member, date_str)
                 schedule[date_str] = chosen_member
-            
-            current_date += timedelta(days=1)
 
         db.commit()
         return schedule
@@ -470,38 +537,226 @@ def auto_schedule_duties(db, start_date_str, days):
 
 @bp.route('/api/roster/auto-schedule', methods=['POST'])
 def auto_schedule():
-    """Automatically schedule duties for a date range"""
+    """Automatically schedule duties for a month range"""
     data = request.get_json()
-    if not data or 'start_date' not in data or 'days' not in data:
-        return jsonify({'error': 'start_date and days are required'}), 400
-
+    month = data.get('month')  # format: YYYY-MM
+    months = int(data.get('months', 1))
+    if not month or months < 1:
+        return jsonify({'error': 'month and months are required'}), 400
     try:
         db = get_db()
-        schedule = auto_schedule_duties(db, data['start_date'], data['days'])
         
-        # Convert schedule to response format
-        assignments = []
-        for date, member_id in schedule.items():
-            if member_id is not None:
-                member = db.execute(
-                    'SELECT name FROM team_members WHERE id = ?',
-                    (member_id,)
-                ).fetchone()
-                assignments.append({
-                    'date': date,
-                    'member_id': member_id,
-                    'member_name': member['name'] if member else 'Unknown'
-                })
-            else:
-                assignments.append({
-                    'date': date,
-                    'member_id': None,
-                    'member_name': 'No available members'
-                })
+        # Clean up constraints from inactive members before scheduling
+        db.execute(
+            '''DELETE FROM member_constraints 
+               WHERE member_id IN (
+                   SELECT id FROM team_members WHERE status = "inactive"
+               )'''
+        )
         
-        return jsonify({
-            'message': 'Duties scheduled successfully',
-            'assignments': assignments
-        }), 200
+        year, start_month = map(int, month.split('-'))
+        all_assignments = []
+        for i in range(months):
+            m = start_month + i
+            y = year + (m - 1) // 12
+            m = (m - 1) % 12 + 1
+            first_day = f"{y}-{str(m).zfill(2)}-01"
+            
+            # Get month range and verify
+            month_range_result = monthrange(y, m)
+            last_day_num = month_range_result[1]
+            last_day = f"{y}-{str(m).zfill(2)}-{last_day_num}"
+            
+            schedule = auto_schedule_duties(db, first_day, last_day)
+            for date, member_id in schedule.items():
+                if member_id is not None:
+                    member = db.execute('SELECT name FROM team_members WHERE id = ?', (member_id,)).fetchone()
+                    all_assignments.append({'date': date, 'member_id': member_id, 'member_name': member['name'] if member else 'Unknown'})
+                else:
+                    all_assignments.append({'date': date, 'member_id': None, 'member_name': 'No available members'})
+        return jsonify({'message': 'Duties scheduled successfully', 'assignments': all_assignments}), 200
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+@bp.route('/api/constraints/cleanup', methods=['POST'])
+def cleanup_inactive_constraints():
+    """Clean up constraints from inactive members"""
+    try:
+        db = get_db()
+        
+        # Delete constraints from inactive members
+        result = db.execute(
+            '''DELETE FROM member_constraints 
+               WHERE member_id IN (
+                   SELECT id FROM team_members WHERE status = "inactive"
+               )'''
+        )
+        
+        # Delete assignments from inactive members
+        assignments_result = db.execute(
+            '''DELETE FROM duty_assignments 
+               WHERE member_id IN (
+                   SELECT id FROM team_members WHERE status = "inactive"
+               )'''
+        )
+        
+        # Delete workload history from inactive members
+        workload_result = db.execute(
+            '''DELETE FROM workload_history 
+               WHERE member_id IN (
+                   SELECT id FROM team_members WHERE status = "inactive"
+               )'''
+        )
+        
+        db.commit()
+        
+        return jsonify({
+            'message': 'Cleanup completed successfully',
+            'constraints_deleted': result.rowcount,
+            'assignments_deleted': assignments_result.rowcount,
+            'workload_records_deleted': workload_result.rowcount
+        }), 200
+    except sqlite3.Error as e:
+        return jsonify({'error': str(e)}), 500
+
+@bp.route('/api/export/outlook', methods=['GET'])
+def export_to_outlook():
+    """Export duty roster assignments to iCalendar format for Outlook import"""
+    start_date = request.args.get('start_date', datetime.now().strftime('%Y-%m-%d'))
+    end_date = request.args.get('end_date', 
+                              (datetime.strptime(start_date, '%Y-%m-%d') + timedelta(days=30)).strftime('%Y-%m-%d'))
+    
+    try:
+        db = get_db()
+        assignments = db.execute(
+            '''SELECT a.*, m.name as member_name, m.employee_number
+               FROM duty_assignments a 
+               JOIN team_members m ON a.member_id = m.id 
+               WHERE a.date BETWEEN ? AND ? AND m.status = "active"
+               ORDER BY a.date''',
+            (start_date, end_date)
+        ).fetchall()
+        
+        # Generate iCalendar content
+        ics_content = generate_ics_content(assignments)
+        
+        # Create response with proper headers for file download
+        response = Response(ics_content, mimetype='text/calendar')
+        response.headers['Content-Disposition'] = f'attachment; filename=duty_roster_{start_date}_to_{end_date}.ics'
+        response.headers['Content-Type'] = 'text/calendar; charset=utf-8'
+        
+        return response
+        
+    except sqlite3.Error as e:
+        return jsonify({'error': str(e)}), 500
+
+@bp.route('/api/export/outlook/month', methods=['GET'])
+def export_to_outlook_by_month():
+    """Export duty roster assignments to iCalendar format for a month range"""
+    month = request.args.get('month')  # format: YYYY-MM
+    months = int(request.args.get('months', 1))
+    
+    if not month or months < 1:
+        return jsonify({'error': 'month and months are required'}), 400
+    
+    try:
+        db = get_db()
+        year, start_month = map(int, month.split('-'))
+        all_assignments = []
+        
+        for i in range(months):
+            m = start_month + i
+            y = year + (m - 1) // 12
+            m = (m - 1) % 12 + 1
+            first_day = f"{y}-{str(m).zfill(2)}-01"
+            
+            # Get month range and verify
+            month_range_result = monthrange(y, m)
+            last_day_num = month_range_result[1]
+            last_day = f"{y}-{str(m).zfill(2)}-{last_day_num}"
+            
+            # Get assignments for this month
+            assignments = db.execute(
+                '''SELECT a.*, m.name as member_name, m.employee_number
+                   FROM duty_assignments a 
+                   JOIN team_members m ON a.member_id = m.id 
+                   WHERE a.date BETWEEN ? AND ? AND m.status = "active"
+                   ORDER BY a.date''',
+                (first_day, last_day)
+            ).fetchall()
+            
+            all_assignments.extend(assignments)
+        
+        # Generate iCalendar content
+        ics_content = generate_ics_content(all_assignments)
+        
+        # Create response with proper headers for file download
+        response = Response(ics_content, mimetype='text/calendar')
+        response.headers['Content-Disposition'] = f'attachment; filename=duty_roster_{month}_{months}_months.ics'
+        response.headers['Content-Type'] = 'text/calendar; charset=utf-8'
+        
+        return response
+        
+    except sqlite3.Error as e:
+        return jsonify({'error': str(e)}), 500
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+def generate_ics_content(assignments):
+    """Generate iCalendar content from duty assignments"""
+    ics_lines = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//OmegaApp//Duty Roster//HE',
+        'CALSCALE:GREGORIAN',
+        'METHOD:PUBLISH',
+        'X-WR-CALNAME:תורנויות צוות',
+        'X-WR-CALDESC:תורנויות צוות - יוצא אוטומטית מהמערכת'
+    ]
+    
+    for assignment in assignments:
+        # Convert sqlite3.Row to dict if needed
+        if hasattr(assignment, 'keys'):
+            assignment_dict = dict(assignment)
+        else:
+            assignment_dict = assignment
+            
+        # Convert date to datetime for the event
+        event_date = datetime.strptime(assignment_dict['date'], '%Y-%m-%d')
+        start_datetime = event_date.replace(hour=8, minute=0, second=0)  # Start at 8:00 AM
+        end_datetime = event_date.replace(hour=20, minute=0, second=0)   # End at 8:00 PM
+        
+        # Format dates for iCalendar (local time format without Z suffix)
+        start_str = start_datetime.strftime('%Y%m%dT%H%M%S')
+        end_str = end_datetime.strftime('%Y%m%dT%H%M%S')
+        created_str = datetime.now().strftime('%Y%m%dT%H%M%SZ')
+        
+        # Create unique ID for the event
+        event_uid = f"duty-{assignment_dict['date']}-{assignment_dict['member_id']}@omegaapp.local"
+        
+        # Escape special characters in description and summary
+        description = f"תורן: {assignment_dict['member_name']}"
+        if assignment_dict.get('notes'):
+            description += f"\\nהערות: {assignment_dict['notes']}"
+        
+        summary = f"תורן - {assignment_dict['member_name']}"
+        
+        # Add event to calendar
+        ics_lines.extend([
+            'BEGIN:VEVENT',
+            f'UID:{event_uid}',
+            f'DTSTART:{start_str}',
+            f'DTEND:{end_str}',
+            f'DTSTAMP:{created_str}',
+            f'SUMMARY:{summary}',
+            f'DESCRIPTION:{description}',
+            'CATEGORIES:תורנויות',
+            'PRIORITY:5',
+            'STATUS:CONFIRMED',
+            'TRANSP:OPAQUE',
+            'END:VEVENT'
+        ])
+    
+    ics_lines.append('END:VCALENDAR')
+    
+    return '\r\n'.join(ics_lines)

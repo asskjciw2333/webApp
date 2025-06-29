@@ -35,6 +35,19 @@
     cursor: not-allowed;
 }
 
+/* Secondary Button Styles */
+.btn-secondary {
+    background-color: var(--background-color-secondary);
+    color: var(--text-color-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background-color: var(--border-color);
+    color: var(--text-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
 
 .untracked-btn {
     background-color: transparent;

@@ -100,6 +100,16 @@ input[type="color"] {
     max-height: 100%;
 }
 
+.calendar-header {
+    padding: var(--spacing-sm);
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: var(--background-color-secondary);
+    border-radius: var(--radius-sm);
+    font-size: 0.9em;
+}
+
 .calendar-day {
     position: relative;
     height: calc((100vh - 200px) / 6); /* Dynamically calculate day cell height */
@@ -112,6 +122,55 @@ input[type="color"] {
     gap: var(--spacing-xs);
     cursor: pointer;
     transition: all 0.2s;
+}
+
+/* Styles for adjacent month days */
+.calendar-day.adjacent-month {
+    background-color: rgba(245, 245, 245, 0.6);
+    opacity: 0.7;
+    color: #888;
+    border-color: #e8e8e8;
+    cursor: default; /* Not clickable */
+}
+
+.calendar-day.adjacent-month:hover {
+    background-color: rgba(245, 245, 245, 0.8);
+    opacity: 0.9;
+    transform: none; /* No hover effect */
+}
+
+.calendar-day.adjacent-month .day-number {
+    color: #999;
+    font-weight: 400;
+}
+
+.calendar-day.adjacent-month .day-member {
+    opacity: 0.8;
+}
+
+.calendar-day.adjacent-month.has-duty {
+    background: rgba(46, 204, 113, 0.3);
+}
+
+.calendar-day.adjacent-month.negative-constraint {
+    background: rgba(231, 76, 60, 0.2);
+}
+
+.calendar-day.adjacent-month.positive-constraint {
+    background: rgba(241, 196, 15, 0.2);
+}
+
+/* Current month days - ensure they stand out */
+.calendar-day.current-month {
+    background-color: #fff;
+    opacity: 1;
+    color: #333;
+    cursor: pointer; /* Clickable */
+}
+
+.calendar-day.current-month .day-number {
+    color: #333;
+    font-weight: 500;
 }
 
 .calendar-day:hover {
@@ -219,19 +278,30 @@ input[type="color"] {
 }
 
 /* Form Controls */
-.form-control-text {
-    width: 100%;
-    padding: var(--spacing-sm) var(--spacing-md);
-    border: 1px solid #e2e8f0;
-    border-radius: var(--radius-sm);
-    font-size: 1rem;
-    transition: var(--transition-base);
+.form-group {
+    margin-bottom: var(--spacing-md);
 }
 
-.form-control-text:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(44, 120, 115, 0.1);
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+    color: var(--text-color-primary);
+}
+
+.form-control {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
     outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
 }
 
 .form-control-text:disabled {
@@ -566,4 +636,128 @@ select.form-control {
 #memberForm input {
     margin-bottom: 16px;
 }
+
+.auto-schedule-dialog {
+    padding: var(--spacing-md);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.auto-schedule-dialog .form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.auto-schedule-dialog label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+}
+
+.auto-schedule-dialog input {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+}
+
+.auto-schedule-dialog input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.1);
+}
+
+.modal-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: flex-end;
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Export to Outlook Dialog */
+.export-outlook-dialog {
+    max-width: 500px;
+}
+
+.export-outlook-dialog p {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-color-primary);
+}
+
+.export-tabs {
+    display: flex;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tab-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    color: var(--text-color-secondary);
+    font-weight: 500;
+}
+
+.tab-btn:hover {
+    color: var(--primary-color);
+    background: var(--background-color-hover);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    background: var(--background-color-secondary);
+}
+
+.tab-content {
+    display: none;
+    margin-bottom: var(--spacing-md);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.export-info {
+    background: var(--background-color-secondary);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    border-left: 4px solid var(--primary-color);
+}
+
+.export-info p {
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+}
+
+.export-info ol {
+    margin: 0;
+    padding-left: var(--spacing-lg);
+}
+
+.export-info li {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-color-secondary);
+    line-height: 1.4;
+}
+
+/* Auto Schedule Dialog */
+.auto-schedule-dialog,
+.delete-assignments-dialog {
+    max-width: 400px;
+}
+
+.auto-schedule-dialog p,
+.delete-assignments-dialog p {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-color-primary);
+}
+
 

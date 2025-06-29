@@ -50,8 +50,11 @@ export class RosterStateManager {
     // Update assignments for a date range
     async updateAssignments(startDate, endDate) {
         try {
+            const startDateStr = this.formatDate(startDate);
+            const endDateStr = this.formatDate(endDate);
+            
             const response = await fetch(
-                `/duty-roster/api/assignments?start_date=${startDate.toISOString().split('T')[0]}&end_date=${endDate.toISOString().split('T')[0]}`
+                `/duty-roster/api/assignments?start_date=${startDateStr}&end_date=${endDateStr}`
             );
             this.assignments = await response.json();
             this.notifySubscribers({ type: 'assignments', data: this.assignments });
@@ -154,7 +157,8 @@ export class RosterStateManager {
     checkAssignmentConflicts(date, memberId) {
         // Convert date to YYYY-MM-DD format to ensure consistent comparison
         const normalizedDate = new Date(date);
-        const dateStr = normalizedDate.toISOString().split('T')[0];
+        normalizedDate.setHours(12, 0, 0, 0);
+        const dateStr = this.formatDate(normalizedDate);
         
         // Check existing assignments
         const existingAssignment = this.assignments.find(a => a.date === dateStr);
@@ -311,14 +315,26 @@ export class RosterStateManager {
         // Set the time to noon to avoid timezone issues
         const normalizedDate = new Date(date);
         normalizedDate.setHours(12, 0, 0, 0);
-        return normalizedDate.toISOString().split('T')[0];
+        
+        // Use local date formatting to avoid timezone issues
+        const year = normalizedDate.getFullYear();
+        const month = String(normalizedDate.getMonth() + 1).padStart(2, '0');
+        const day = String(normalizedDate.getDate()).padStart(2, '0');
+        
+        return `${year}-${month}-${day}`;
     }
 
     // Get assignments for a specific period
     getAssignmentsForPeriod(startDate, endDate) {
         return this.assignments.filter(assignment => {
             const assignmentDate = new Date(assignment.date);
-            return assignmentDate >= startDate && assignmentDate <= endDate;
+            assignmentDate.setHours(12, 0, 0, 0);
+            const normalizedStartDate = new Date(startDate);
+            normalizedStartDate.setHours(12, 0, 0, 0);
+            const normalizedEndDate = new Date(endDate);
+            normalizedEndDate.setHours(12, 0, 0, 0);
+            
+            return assignmentDate >= normalizedStartDate && assignmentDate <= normalizedEndDate;
         });
     }
 
@@ -341,7 +357,8 @@ export class RosterStateManager {
     getDateConstraints(date) {
         // Convert date to YYYY-MM-DD format to ensure consistent comparison
         const normalizedDate = new Date(date);
-        const dateStr = normalizedDate.toISOString().split('T')[0];
+        normalizedDate.setHours(12, 0, 0, 0);
+        const dateStr = this.formatDate(normalizedDate);
         const dayOfWeek = normalizedDate.getDay();
         
         const dateConstraints = this.constraints.filter(c => 
@@ -360,9 +377,23 @@ export class RosterStateManager {
         setInterval(() => {
             this.updateMembers();
             this.updateConstraints();
-            // Update assignments for current month
-            const startDate = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth(), 1);
-            const endDate = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth() + 1, 0);
+            // Update assignments for current month with adjacent days
+            const year = this.currentDate.getFullYear();
+            const month = this.currentDate.getMonth();
+            
+            // Calculate the first day of the week that contains the first day of the month
+            const firstDayOfMonth = new Date(year, month, 1);
+            const firstDayOfWeek = firstDayOfMonth.getDay();
+            const daysFromPrevMonth = firstDayOfWeek;
+            
+            // Calculate the last day of the week that contains the last day of the month
+            const lastDayOfMonth = new Date(year, month + 1, 0);
+            const lastDayOfWeek = lastDayOfMonth.getDay();
+            const daysToNextMonth = 6 - lastDayOfWeek;
+            
+            const startDate = new Date(year, month, 1 - daysFromPrevMonth);
+            const endDate = new Date(year, month + 1, daysToNextMonth);
+            
             this.updateAssignments(startDate, endDate);
         }, intervalMinutes * 60 * 1000);
     }
